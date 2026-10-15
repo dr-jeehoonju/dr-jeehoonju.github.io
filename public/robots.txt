@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /book/received/
+Sitemap: https://jeehoonju.com/sitemap-index.xml

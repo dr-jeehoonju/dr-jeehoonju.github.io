@@ -1,0 +1,37 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+  title="Booking request status"
+  description="Check your Tune Clinic booking request status."
+  light
+  noindex
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">Tune Clinic booking</p>
+    <h1 id="receipt-title">Your request status.</h1>
+    <p class="lead" id="receipt-text">
+      If you have already submitted a request, please check the clinic’s message
+      or contact the clinic. This page alone does not confirm receipt.
+    </p>
+    <p>
+      Appointment confirmation and change or cancellation links come through
+      Tune Clinic’s existing booking service.
+    </p>
+    <a class="button" href="https://wa.me/821098748575">
+      Contact Tune Clinic ↗
+    </a>
+  </div>
+  <script>
+    try {
+      const v = JSON.parse(sessionStorage.getItem("drju-receipt") || "{}");
+      if (v.received && Date.now() - v.at < 30 * 60 * 1000) {
+        document.querySelector("#receipt-title")!.textContent =
+          "Your request was received.";
+        document.querySelector("#receipt-text")!.textContent =
+          "Tune Clinic will review your request and contact you. Your appointment is not confirmed until the clinic confirms it. Your treating physician is assigned by the clinic.";
+      }
+    } catch {}
+  </script>
+</Layout>

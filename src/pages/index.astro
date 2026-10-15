@@ -1,0 +1,510 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Constellation from "../components/Constellation.astro";
+import VideoRail from "../components/VideoRail.astro";
+import BookingCTA from "../components/BookingCTA.astro";
+const concerns = [
+  [
+    "Sagging & laxity",
+    "sagging-and-laxity",
+    "How support, skin and facial shape contribute to what you see.",
+  ],
+  [
+    "Pigmentation",
+    "pigmentation",
+    "Start with the type of pigment and your treatment history.",
+  ],
+  [
+    "Acne scars",
+    "acne-scarring",
+    "Understand the difference between texture, scars and marks.",
+  ],
+  [
+    "Volume changes",
+    "volume-loss",
+    "Consider proportion and support before adding volume.",
+  ],
+  [
+    "Pores & skin texture",
+    "enlarged-pores",
+    "Set realistic goals for skin quality and maintenance.",
+  ],
+];
+---
+
+<Layout
+  title="Medicine, with perspective"
+  description="Meet Dr. Jee Hoon Ju, an English-speaking aesthetic medicine physician at Tune Clinic in Seoul and founder of AetherHeal. Explore care and plan your visit."
+>
+  <section class="hero">
+    <Constellation />
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="live-dot"></span> Physician · Founder · Seoul
+        </p>
+        <h1>
+          Medicine, with
+          <br />
+          <em>perspective.</em>
+        </h1>
+        <p class="hero-description">
+          I’m Dr. Jee Hoon Ju.
+          <br />
+          Aesthetic medicine grounded in thoughtful assessment.
+          <br class="desktop" /> Technology built around the people it serves.
+        </p>
+        <div class="actions">
+          <a class="button" href="/book/" data-event="booking_cta">
+            Book at Tune Clinic <span>↗</span>
+          </a>
+          <a class="hero-about" href="/about/">
+            Meet Dr. Ju <span>→</span>
+          </a>
+        </div>
+        <p class="hero-location">English-speaking care · Apgujeong, Seoul</p>
+      </div>
+      <div class="hero-portrait">
+        <img
+          src="/images/dr-ju.webp"
+          alt="Dr. Jee Hoon Ju at Tune Clinic"
+          width="960"
+          height="1200"
+          fetchpriority="high"
+        />
+        <div class="portrait-caption">
+          <span>Jee Hoon Ju, MD</span>
+          <span>Aesthetic medicine</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bottom wrap">
+      <span>01 / The human constellation</span>
+      <span>Explore below ↓</span>
+    </div>
+  </section>
+  <div class="trust-strip wrap">
+    <div>
+      <span class="eyebrow">Clinical practice</span>
+      <p>Tune Clinic, Seoul</p>
+    </div>
+    <div>
+      <span class="eyebrow">Communication</span>
+      <p>Consultation in English</p>
+    </div>
+    <div>
+      <span class="eyebrow">Education</span>
+      <p>University of Debrecen</p>
+    </div>
+    <div>
+      <span class="eyebrow">Building</span>
+      <p>Founder, AetherHeal</p>
+    </div>
+  </div>
+  <section class="section wrap philosophy">
+    <div>
+      <p class="eyebrow">A physician’s perspective</p>
+      <h2>
+        A good plan begins
+        <br />
+        with <em>understanding.</em>
+      </h2>
+      <a class="text-link" href="/about/">
+        My approach to care ↗
+      </a>
+    </div>
+    <div class="philosophy-copy">
+      <p class="large-copy">
+        Your face, your expectations, and the life you return to after Seoul.
+        All three belong in the conversation.
+      </p>
+      <p class="muted">
+        A device name is a starting point, not a treatment plan. My approach
+        begins with the concern itself, the changes you want, and the limits of
+        what a procedure can offer.
+      </p>
+      <div class="principles">
+        <span>01 / Assessment before selection</span>
+        <span>02 / Evidence with context</span>
+        <span>03 / A plan you can understand</span>
+      </div>
+    </div>
+  </section>
+  <VideoRail />
+  <section class="section care-home">
+    <div class="wrap">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Begin with your concern</p>
+          <h2>
+            Care, considered
+            <br />
+            <em>as a whole.</em>
+          </h2>
+        </div>
+        <a class="text-link" href="/care/">
+          Explore all treatments ↗
+        </a>
+      </div>
+      <div class="concern-list">
+        {concerns.map(([name, slug, desc], i) => (
+          <a href={`/care/concerns/${slug}/`}>
+            <span class="number">0{i + 1}</span>
+            <h3>{name}</h3>
+            <p>{desc}</p>
+            <span aria-hidden="true">↗</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <section class="section wrap grid-2 visit-home">
+    <img
+      src="/images/clinic.webp"
+      alt="The waiting space at Tune Clinic in Apgujeong, Seoul"
+      width="960"
+      height="640"
+      loading="lazy"
+    />
+    <div>
+      <p class="eyebrow">Your time in Seoul</p>
+      <h2>
+        A visit that fits
+        <br />
+        your <em>journey.</em>
+      </h2>
+      <p class="lead">
+        From a first conversation to questions after you return home, clear
+        communication matters.
+      </p>
+      <p class="muted">
+        Explore the clinic, practical travel information, and what to discuss
+        before you choose a treatment date.
+      </p>
+      <a class="text-link" href="/visit/">
+        Plan your visit ↗
+      </a>
+    </div>
+  </section>
+  <section class="section building-home">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">Beyond the consultation room</p>
+        <h2>
+          Building a more
+          <br />
+          <em>human</em> future.
+        </h2>
+      </div>
+      <div>
+        <p class="large-copy">
+          The questions I encounter in medicine also shape what I build.
+        </p>
+        <p class="muted">
+          As founder of AetherHeal, I explore how AI can help people understand
+          information and support the work around clinical care. Medical
+          judgment remains with the physician.
+        </p>
+        <a class="text-link" href="/building/">
+          Explore what I’m building ↗
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="section wrap">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Notes & perspectives</p>
+        <h2>
+          Thinking, <em>in public.</em>
+        </h2>
+      </div>
+      <a class="text-link" href="/notes/">
+        Read the notes ↗
+      </a>
+    </div>
+    <div class="grid-3">
+      <a class="index-card" href="/notes/before-choosing-a-treatment/">
+        <span class="eyebrow">Care · Perspective</span>
+        <h3>Before choosing a treatment, define the question.</h3>
+        <p>A consultation checklist for a more useful conversation.</p>
+      </a>
+      <a class="index-card" href="/notes/evidence-and-experience/">
+        <span class="eyebrow">Medicine · Evidence</span>
+        <h3>What a patient story can tell you.</h3>
+        <p>Reading personal experiences alongside clinical evidence.</p>
+      </a>
+      <a class="index-card" href="/errata/">
+        <span class="eyebrow">Building · Public record</span>
+        <h3>The Founder’s Errata.</h3>
+        <p>A record of changing my mind, and the reasons behind it. ↗</p>
+      </a>
+    </div>
+  </section>
+  <BookingCTA />
+</Layout>
+<style>
+  .hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 720px;
+  }
+  .hero-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    align-items: center;
+    gap: 50px;
+    min-height: 640px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  .hero-copy {
+    position: relative;
+    z-index: 2;
+  }
+  .hero h1 {
+    font-size: clamp(3.5rem, 6.7vw, 6.6rem);
+    margin-bottom: 27px;
+  }
+  .hero-description {
+    color: #b7bfcc;
+    font-size: 0.94rem;
+    line-height: 1.9;
+    margin-bottom: 32px;
+  }
+  .hero-about {
+    font-size: 0.8rem;
+  }
+  .hero-about span {
+    margin-left: 16px;
+  }
+  .hero-location {
+    font-size: 0.66rem;
+    color: var(--muted);
+    margin-top: 22px;
+  }
+  .hero-portrait {
+    position: relative;
+    z-index: 1;
+    max-width: 310px;
+    justify-self: end;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .hero-portrait:before {
+    content: "";
+    position: absolute;
+    inset: -20px 20px 20px -20px;
+    border: 1px solid #a69bdf44;
+    border-radius: 160px 160px 0 0;
+  }
+  .hero-portrait img {
+    position: relative;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 160px 160px 0 0;
+    filter: saturate(0.55);
+  }
+  .portrait-caption {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-size: 0.64rem;
+  }
+  .portrait-caption span:last-child {
+    color: var(--muted);
+  }
+  .hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    color: #9099aa;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .hero-bottom span:last-child {
+    margin-right: 110px;
+  }
+  .live-dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+    margin-right: 9px;
+  }
+  .trust-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .trust-strip .eyebrow {
+    font-size: 0.57rem;
+    color: var(--muted);
+  }
+  .trust-strip p {
+    font-family: "Source Serif 4 Variable", serif;
+    font-size: 1.15rem;
+    margin: 8px 0 0;
+  }
+  .philosophy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .philosophy h2 {
+    font-size: 3.6rem;
+    margin-bottom: 35px;
+  }
+  .large-copy {
+    font-family: "Source Serif 4 Variable", serif;
+    font-size: 1.65rem;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
+  .principles {
+    display: grid;
+    gap: 15px;
+    margin-top: 28px;
+    font-size: 0.7rem;
+    color: var(--gold);
+  }
+  .care-home {
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .care-home .eyebrow {
+    color: #675b40;
+  }
+  .concern-list a {
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr 20px;
+    gap: 20px;
+    align-items: center;
+    border-top: 1px solid #080d1826;
+    padding: 26px 0;
+  }
+  .concern-list h3 {
+    margin: 0;
+    font-size: 1.9rem;
+  }
+  .concern-list p {
+    margin: 0;
+    color: #5c6470;
+    font-size: 0.82rem;
+  }
+  .concern-list .number {
+    color: #75674c;
+  }
+  .concern-list a:hover h3 {
+    color: #73618f;
+  }
+  .visit-home {
+    align-items: center;
+  }
+  .visit-home img {
+    height: 480px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .building-home {
+    background: #111827;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  @media (max-width: 900px) {
+    .hero-inner {
+      gap: 35px;
+      min-height: 600px;
+    }
+    .hero-portrait {
+      max-width: 260px;
+    }
+    .philosophy {
+      gap: 40px;
+    }
+    .philosophy h2 {
+      font-size: 3rem;
+    }
+    .trust-strip p {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 640px) {
+    .hero {
+      min-height: 0;
+    }
+    .hero-inner {
+      display: block;
+      padding-top: 48px;
+      padding-bottom: 30px;
+      min-height: 0;
+    }
+    .hero h1 {
+      font-size: 3.65rem;
+    }
+    .hero-description {
+      font-size: 0.85rem;
+    }
+    .hero-portrait {
+      width: 170px;
+      margin: 34px 0 0 auto;
+    }
+    .hero-portrait img {
+      aspect-ratio: 4/4.5;
+    }
+    .hero-portrait:before {
+      inset: -12px 12px 12px -12px;
+    }
+    .portrait-caption {
+      font-size: 0.55rem;
+      gap: 5px;
+    }
+    .hero-bottom {
+      padding-bottom: 30px;
+    }
+    .hero-bottom span:last-child {
+      display: none;
+    }
+    .trust-strip {
+      grid-template-columns: 1fr 1fr;
+      gap: 23px;
+    }
+    .philosophy {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+    .philosophy h2 {
+      font-size: 2.8rem;
+    }
+    .concern-list a {
+      grid-template-columns: 25px 1fr 20px;
+      gap: 10px;
+      padding: 25px 0;
+    }
+    .concern-list h3 {
+      font-size: 1.65rem;
+    }
+    .concern-list p {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .concern-list a > span:last-child {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .visit-home img {
+      height: 340px;
+    }
+    .desktop {
+      display: none;
+    }
+  }
+</style>

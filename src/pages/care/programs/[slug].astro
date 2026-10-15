@@ -1,0 +1,71 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { BOOKING_PROGRAMS } from "../../../lib/booking-catalog";
+export function getStaticPaths() {
+  return BOOKING_PROGRAMS.map((program) => ({
+    params: { slug: program.value.split(":")[1] },
+    props: { program },
+  }));
+}
+const { program } = Astro.props;
+---
+
+<Layout
+  title={`${program.title}: planning a consultation`}
+  description={`Questions to discuss before considering ${program.title} at Tune Clinic in Seoul.`}
+  light
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">Care · Clinic programs</p>
+    <h1>{program.title}</h1>
+    <p class="lead">
+      Start with your priorities, then discuss whether this clinic program fits
+      your visit.
+    </p>
+  </div>
+  <article class="wrap reading">
+    <h2>The current clinic outline</h2>
+    <p>{program.detail}</p>
+    <p>
+      This outline reflects Tune Clinic’s published menu. Confirm the current
+      components, quantities, price and exclusions with the clinic before
+      deciding.
+    </p>
+    <h2>What I would want to discuss first</h2>
+    <p>
+      What change matters most to you? What previous treatments and medical
+      history should the clinician know about? How much time will you have in
+      Seoul, and who can help if you need follow-up after leaving?
+    </p>
+    <h2>A program is a starting point</h2>
+    <p>
+      The name of a package does not establish that every component is
+      appropriate for you. Ask about the purpose, evidence, risks, recovery and
+      alternatives for each proposed treatment. Your assessment may lead to a
+      different plan or to no treatment.
+    </p>
+    <h2>Before committing</h2>
+    <ul>
+      <li>Which components are necessary, optional or unsuitable for me?</li>
+      <li>What is the full quotation, including possible additional costs?</li>
+      <li>What recovery and follow-up should I plan around my travel?</li>
+    </ul>
+    <p>
+      <a class="text-link" href="https://tuneclinic-global.com/programs">
+        Check current clinic scope and pricing ↗
+      </a>
+    </p>
+    <a class="button" href="/book/" data-event="booking_cta">
+      Book a clinic consultation ↗
+    </a>
+    <p class="fineprint">
+      General Tune Clinic appointment request. Booking does not guarantee a
+      consultation with Dr. Ju or commit you to treatment.
+    </p>
+    <p>
+      <a class="text-link" href="/care/programs/">
+        ← All clinic programs
+      </a>
+    </p>
+  </article>
+</Layout>

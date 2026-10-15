@@ -1,0 +1,103 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BusinessForm from "../components/BusinessForm";
+---
+
+<Layout
+  title="Building with AetherHeal"
+  description="Dr. Jee Hoon Ju’s work as founder of AetherHeal, exploring AI, communication and the work around clinical care."
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">Founder’s work</p>
+    <h1>
+      Technology,
+      <br />
+      with <em>purpose.</em>
+    </h1>
+    <p class="lead">
+      Better tools begin with a close understanding of the people who use them.
+    </p>
+  </div>
+  <section class="wrap section rule grid-2">
+    <div>
+      <h2>AetherHeal.</h2>
+      <p class="eyebrow">Founder · AetherHeal Global Inc.</p>
+    </div>
+    <div>
+      <p class="large-copy">
+        Working at the intersection of medicine, communication and AI.
+      </p>
+      <p class="muted">
+        My clinical work raises practical questions about how information moves,
+        how people understand one another, and where useful tools can reduce
+        friction. AetherHeal is the company through which I explore and build
+        around these questions.
+      </p>
+      <p class="muted">
+        Clinical AI is assistive. Interpretation and treatment decisions remain
+        with physicians. A product concept or development milestone is not
+        evidence of clinical effectiveness.
+      </p>
+      <a class="text-link" href="https://aetherheal.com/">
+        Visit AetherHeal ↗
+      </a>
+    </div>
+  </section>
+  <section class="wrap section rule grid-2">
+    <div>
+      <p class="eyebrow">Communication</p>
+      <h2>DockieTalkie.</h2>
+    </div>
+    <div>
+      <p class="lead">
+        Exploring the language and information gaps people encounter around
+        medical care.
+      </p>
+      <p class="muted">
+        See the current product website for its available features and scope.
+        Translation and shared experiences support communication; they do not
+        establish treatment suitability.
+      </p>
+      <a class="text-link" href="https://dockietalkie.app/en">
+        Explore DockieTalkie ↗
+      </a>
+    </div>
+  </section>
+  <section class="wrap section rule grid-2">
+    <div>
+      <p class="eyebrow">An open record</p>
+      <h2>
+        Learning,
+        <br />
+        <em>in public.</em>
+      </h2>
+    </div>
+    <div>
+      <p class="lead">
+        The Founder’s Errata records positions I have changed, what I now think,
+        and why.
+      </p>
+      <p class="muted">
+        The original entries remain available at their existing addresses.
+      </p>
+      <a class="text-link" href="/errata/">
+        Read the Founder’s Errata ↗
+      </a>
+    </div>
+  </section>
+  <section class="wrap section rule" id="contact">
+    <div style="max-width:760px">
+      <p class="eyebrow">Business & collaboration</p>
+      <h2>Start a conversation.</h2>
+      <p class="muted">
+        Partnerships, research conversations and speaking inquiries. For
+        treatment or appointments, please use{" "}
+        <a class="text-link" href="/book/">
+          clinic booking
+        </a>
+        .
+      </p>
+      <BusinessForm client:visible />
+    </div>
+  </section>
+</Layout>

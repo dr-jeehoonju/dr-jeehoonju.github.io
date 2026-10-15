@@ -1,0 +1,92 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { care, careUrl } from "../../lib/care";
+---
+
+<Layout
+  title="Care, considered as a whole"
+  description="Explore aesthetic treatment questions, concerns and consultation guides for a visit to Tune Clinic in Seoul."
+  light
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">The care library</p>
+    <h1>
+      Start with the
+      <br />
+      <em>right questions.</em>
+    </h1>
+    <p class="lead">
+      Explore the concerns and treatments discussed at Tune Clinic. Use these
+      pages to prepare for a conversation, with room for alternatives and an
+      individual assessment.
+    </p>
+  </div>
+  <section class="wrap" style="padding-bottom:60px">
+    <h2>Your concern</h2>
+    <div class="catalog-grid">
+      {care
+        .filter((x) => x.kind === "concern")
+        .map((x) => (
+          <a class="index-card" href={careUrl(x)}>
+            <h3>{x.title} ↗</h3>
+            <p>{x.intro}</p>
+          </a>
+        ))}
+    </div>
+  </section>
+  <section class="wrap section rule">
+    <div class="section-heading">
+      <h2>Treatments & programs.</h2>
+      <a class="text-link" href="/care/programs/">
+        Explore clinic programs ↗
+      </a>
+    </div>
+    <label for="care-search" class="eyebrow">
+      Search the treatment library
+    </label>
+    <input
+      class="filter"
+      id="care-search"
+      type="search"
+      placeholder="Try Ultherapy, pigment or skin care"
+    />
+    <p class="fineprint" id="care-count" role="status">
+      {care.filter((x) => x.kind === "treatment").length} treatment guides
+    </p>
+    <div class="catalog-grid">
+      {care
+        .filter((x) => x.kind === "treatment")
+        .map((x) => (
+          <a
+            class="index-card"
+            data-care-card
+            data-search={`${x.title} ${x.intro}`.toLowerCase()}
+            href={careUrl(x)}
+          >
+            <h3>{x.title} ↗</h3>
+            <p>{x.intro}</p>
+          </a>
+        ))}
+    </div>
+    <p id="care-empty" hidden>
+      No matching guides. Try another treatment or concern.
+    </p>
+  </section>
+  <script>
+    const input = document.querySelector<HTMLInputElement>("#care-search");
+    const cards = [
+      ...document.querySelectorAll<HTMLElement>("[data-care-card]"),
+    ];
+    input?.addEventListener("input", () => {
+      const q = input.value.trim().toLowerCase();
+      let count = 0;
+      cards.forEach((c) => {
+        c.hidden = !c.dataset.search?.includes(q);
+        if (!c.hidden) count++;
+      });
+      document.querySelector("#care-count")!.textContent =
+        `${count} treatment guides`;
+      document.querySelector<HTMLElement>("#care-empty")!.hidden = count > 0;
+    });
+  </script>
+</Layout>

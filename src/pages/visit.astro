@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BookingCTA from "../components/BookingCTA.astro";
+import {
+  CLINIC_ADDRESS,
+  CLINIC_HOURS,
+  STATION,
+  GOOGLE_MAPS_URL,
+  CLINIC_PHONE_PRIMARY,
+} from "../lib/clinic";
+---
+
+<Layout
+  title="Your visit to Seoul"
+  description="Plan your visit to Tune Clinic in Apgujeong: location, English communication, treatment questions and follow-up."
+  light
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">Your visit</p>
+    <h1>
+      Seoul, with a<br />
+      <em>clearer plan.</em>
+    </h1>
+    <p class="lead">
+      Bring your questions. Leave room in your itinerary for assessment,
+      discussion and follow-up.
+    </p>
+  </div>
+  <div class="wrap">
+    <img
+      class="visit-photo"
+      src="/images/clinic.webp"
+      alt="Tune Clinic waiting area"
+      width="960"
+      height="640"
+    />
+  </div>
+  <section class="section wrap grid-2">
+    <div>
+      <p class="eyebrow">Find the clinic</p>
+      <h2>
+        Apgujeong,
+        <br />
+        Seoul.
+      </h2>
+      <p>{CLINIC_ADDRESS}</p>
+      <p>{STATION}</p>
+      <p>{CLINIC_HOURS}</p>
+      <p>
+        <a href={`tel:${CLINIC_PHONE_PRIMARY}`}>{CLINIC_PHONE_PRIMARY}</a>
+      </p>
+      <a
+        class="text-link"
+        href={GOOGLE_MAPS_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Google Maps ↗
+      </a>
+    </div>
+    <div>
+      <h3>Before you travel</h3>
+      <p>
+        Share your travel dates and questions with the clinic. Bring a list of
+        previous procedures, medicines and relevant health information to your
+        consultation. A message can help plan the visit, but treatment
+        suitability is assessed in person.
+      </p>
+      <h3>During your visit</h3>
+      <p>
+        Discuss the treatment goal, alternatives, potential risks, likely
+        recovery and full quote before deciding. The clinic confirms your
+        treating physician. You can ask questions or decide not to proceed.
+      </p>
+      <h3>Before you leave Korea</h3>
+      <p>
+        Ask for written aftercare and a clear follow-up contact. Discuss your
+        flight date and any upcoming events before treatment; recovery and
+        travel timing vary with the procedure and your response.
+      </p>
+      <h3>After returning home</h3>
+      <p>
+        Continue non-urgent questions through the clinic. For severe, rapidly
+        changing or urgent symptoms, seek local medical care rather than waiting
+        for an online reply.
+      </p>
+      <a class="text-link" href="https://wa.me/821098748575">
+        Contact Tune Clinic on WhatsApp ↗
+      </a>
+    </div>
+  </section>
+  <section class="wrap reading">
+    <h2>Costs and practical questions</h2>
+    <p>
+      Browse the current clinic menu before your consultation. Published
+      starting prices do not replace an individual quote. Confirm the product,
+      amount or device scope, taxes, optional additions and aftercare before
+      agreeing to a plan.
+    </p>
+    <a class="text-link" href="https://tuneclinic-global.com/treatments">
+      View Tune Clinic’s current treatment menu ↗
+    </a>
+    <details>
+      <summary>Can everything be done in one visit?</summary>
+      <p>
+        Ask the physician which parts of a plan can fit your stay. Some concerns
+        require staged treatment or follow-up. A short trip should not determine
+        treatment suitability.
+      </p>
+    </details>
+    <details>
+      <summary>Is this a Dr. Ju appointment?</summary>
+      <p>
+        No. This website submits a general Tune Clinic appointment request. The
+        clinic confirms your treating physician.
+      </p>
+    </details>
+    <details>
+      <summary>How do I change my appointment?</summary>
+      <p>
+        Use the management link in the clinic’s booking messages or contact Tune
+        Clinic. Do not submit a second request to change an existing
+        appointment.
+      </p>
+    </details>
+  </section>
+  <BookingCTA />
+</Layout>

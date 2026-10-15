@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import BookingForm from "../../components/BookingForm";
+---
+
+<Layout
+  title="Book a visit at Tune Clinic"
+  description="Explore appointment availability and request a general clinic consultation at Tune Clinic in Seoul. All times are in Korea Standard Time."
+  light
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">Tune Clinic · Seoul</p>
+    <h1>
+      Make time for
+      <br />a <em>conversation.</em>
+    </h1>
+    <p class="lead">
+      Choose a time to discuss your concerns with the clinic. This is a general
+      Tune Clinic request, not a guaranteed appointment with Dr. Ju.
+    </p>
+  </div>
+  <div class="wrap reading">
+    <BookingForm client:load />
+    <noscript>
+      <p>
+        Online booking requires JavaScript.{" "}
+        <a href="https://tuneclinic-global.com/booking">
+          Open Tune Clinic booking
+        </a>{" "}
+        or{" "}
+        <a href="https://wa.me/821098748575">contact the clinic on WhatsApp</a>.
+      </p>
+    </noscript>
+  </div>
+</Layout>

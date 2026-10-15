@@ -1,0 +1,50 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { BOOKING_PROGRAMS } from "../../../lib/booking-catalog";
+---
+
+<Layout
+  title="Clinic programs and travel planning"
+  description="Explore current Tune Clinic programs as starting points for a physician consultation, with scope and pricing confirmed by the clinic."
+  light
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">Care · Programs</p>
+    <h1>
+      A framework for
+      <br />
+      your <em>visit.</em>
+    </h1>
+    <p class="lead">
+      Clinic programs can help frame a conversation about your goals and time in
+      Seoul. Their names do not determine what is suitable for you.
+    </p>
+  </div>
+  <section class="wrap reading">
+    {BOOKING_PROGRAMS.map((p) => (
+      <section>
+        <h2>
+          <a href={`/care/programs/${p.value.split(":")[1]}/`}>{p.title}</a>
+        </h2>
+        <p>{p.detail}</p>
+        <p>
+          Discuss the included treatment scope, recovery and any alternatives
+          with the clinic. Your assessment may change the plan, and you can
+          decide not to proceed.
+        </p>
+        <a class="text-link" href="https://tuneclinic-global.com/programs">
+          Current clinic scope and price ↗
+        </a>
+      </section>
+    ))}
+    <h2>Before choosing a program</h2>
+    <p>
+      Ask which components are included, whether anything is optional, who
+      provides each part of your care, and how follow-up will work after you
+      leave Korea.
+    </p>
+    <a class="button" href="/book/">
+      Book a clinic consultation ↗
+    </a>
+  </section>
+</Layout>

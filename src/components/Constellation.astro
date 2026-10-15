@@ -1,0 +1,142 @@
+<div class="cosmos" aria-hidden="true">
+  <svg
+    class="cosmos-poster"
+    viewBox="0 0 1000 1000"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <radialGradient id="nebula">
+        <stop stop-color="#a69bdf" stop-opacity=".27" />
+        <stop offset=".5" stop-color="#73659b" stop-opacity=".12" />
+        <stop offset="1" stop-color="#080d18" stop-opacity="0" />
+      </radialGradient>
+      <filter id="cloud">
+        <feGaussianBlur stdDeviation="24" />
+      </filter>
+    </defs>
+    <ellipse
+      cx="550"
+      cy="470"
+      rx="310"
+      ry="410"
+      fill="url(#nebula)"
+      transform="rotate(-30 550 470)"
+    />
+    <g fill="none" stroke="#a69bdf" opacity=".3">
+      <ellipse
+        cx="530"
+        cy="510"
+        rx="280"
+        ry="350"
+        transform="rotate(25 530 510)"
+      />
+      <ellipse
+        cx="530"
+        cy="510"
+        rx="240"
+        ry="320"
+        transform="rotate(-30 530 510)"
+      />
+    </g>
+    <path
+      d="M470 180C650 180 693 300 670 374L710 455L670 479L660 540L620 564L610 642L519 677L530 760"
+      fill="none"
+      stroke="#e6def4"
+      opacity=".3"
+      stroke-width="1.3"
+    />
+    {Array.from({ length: 170 }, (_, i) => {
+      const x = (Math.sin(i * 127.1) * 43758.54) % 1;
+      const y = (Math.cos(i * 311.7) * 29783.3) % 1;
+      return (
+        <circle
+          cx={Math.abs(x) * 1000}
+          cy={Math.abs(y) * 1000}
+          r={i % 7 === 0 ? 1.5 : 0.7}
+          fill="#e2ddf2"
+          opacity={0.2 + (i % 5) * 0.1}
+        />
+      );
+    })}
+  </svg>
+  <canvas id="constellation"></canvas>
+</div>
+<button class="art-pause" aria-pressed="false">
+  Pause motion
+</button>
+<style>
+  .cosmos {
+    position: absolute;
+    inset: -6% -15% -10% 26%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .cosmos-poster,
+  .cosmos canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .cosmos canvas {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .cosmos canvas.ready {
+    opacity: 1;
+  }
+  .art-pause {
+    position: absolute;
+    right: 5%;
+    bottom: 28px;
+    color: #a5afbf;
+    background: none;
+    border: 0;
+    font: inherit;
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    z-index: 4;
+    padding: 10px;
+  }
+  @media (max-width: 640px) {
+    .cosmos {
+      inset: 15% -60% 5% -20%;
+      opacity: 0.7;
+    }
+    .art-pause {
+      bottom: 12px;
+      right: 15px;
+    }
+  }
+</style>
+<script>
+  const canvas = document.querySelector<HTMLCanvasElement>("#constellation");
+  const button = document.querySelector<HTMLButtonElement>(".art-pause");
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+  const connection = (
+    navigator as Navigator & { connection?: { saveData?: boolean } }
+  ).connection;
+  let cleanup: (() => void) | undefined;
+  async function start() {
+    if (!canvas || reduced.matches || connection?.saveData) {
+      if (button) button.hidden = true;
+      return;
+    }
+    try {
+      const { mountConstellation } = await import("../lib/constellation");
+      cleanup = mountConstellation(canvas, button);
+    } catch {
+      if (button) button.hidden = true;
+    }
+  }
+  if ("requestIdleCallback" in window)
+    window.requestIdleCallback(start, { timeout: 1800 });
+  else setTimeout(start, 600);
+  reduced.addEventListener("change", () => {
+    if (reduced.matches) {
+      cleanup?.();
+      if (button) button.hidden = true;
+    }
+  });
+</script>

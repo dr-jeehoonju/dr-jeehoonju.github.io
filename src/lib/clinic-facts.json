@@ -1,0 +1,1471 @@
+{
+  "/treatments/the-first-reading": {
+    "title": "The First Pigment laser Omakase",
+    "prices": [
+      {
+        "title": "The First Pigment laser Omakase",
+        "price": "KRW 330,000",
+        "from": false,
+        "detail": "Enlighten Pico toning + Clarity Pro + targeted pigment laser + free physician consultation."
+      }
+    ],
+    "facts": [
+      {
+        "label": "The First Pigment laser Omakase",
+        "value": "KRW 330,000"
+      },
+      {
+        "label": "Time in clinic",
+        "value": "About 20 minutes"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness and sensitivity vary",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Visible change",
+        "value": "Timing and visible changes vary"
+      },
+      {
+        "label": "Free consult",
+        "value": "Included \u00b7 physician-led"
+      },
+      {
+        "label": "Laser may be deferred",
+        "value": "Deep tan, active acne flare or rash, pregnancy or breastfeeding"
+      }
+    ]
+  },
+  "/treatments/body-composition": {
+    "title": "The Body Filler Omakase",
+    "prices": [
+      {
+        "title": "The Body Filler Omakase",
+        "price": "KRW 2,040,000",
+        "from": true,
+        "detail": "Shoulder filler injection \u00b7 30cc starting scope. Hip treatment and larger volumes are quoted after in-person assessment."
+      }
+    ],
+    "facts": [
+      {
+        "label": "The Body Filler Omakase",
+        "value": "From KRW 2,040,000"
+      },
+      {
+        "label": "Time in clinic",
+        "value": "About 60 to 90 minutes"
+      },
+      {
+        "label": "Downtime",
+        "value": "Swelling and bruising vary by person",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Recovery & travel",
+        "value": "Recovery varies with the treatment and the individual. Confirm aftercare and a buffer for events and travel with the physician."
+      },
+      {
+        "label": "Entry volume",
+        "value": "Shoulder filler 30cc"
+      }
+    ]
+  },
+  "/treatments/lapothera-tune-eyecell": {
+    "title": "Tune Eye Cell",
+    "prices": [
+      {
+        "title": "Tune Eye Cell",
+        "price": "KRW 900,000",
+        "from": false,
+        "detail": "Approximately 8cc."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Tune Eye Cell",
+        "value": "KRW 900,000"
+      },
+      {
+        "label": "Product",
+        "value": "Lafullen Collagen"
+      },
+      {
+        "label": "Volume",
+        "value": "Approximately 8cc"
+      },
+      {
+        "label": "Consultation assesses",
+        "value": "Shadow pattern, skin thickness, hollowing and wrinkle depth, and whether the concern is volume at all"
+      },
+      {
+        "label": "Downtime",
+        "value": "The under-eye swells and bruises easily. Swelling, bruising or unevenness can occur; how visible it is and how long it lasts vary by individual",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Result timing",
+        "value": "Change develops gradually and is reviewed at follow-up; the degree and timing vary by individual and are not promised in advance"
+      },
+      {
+        "label": "Tell the physician about",
+        "value": "Previous under-eye filler, eyelid surgery or other treatment in the area"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "Front and side photos of the under-eye in daylight, without makeup, and your flight date"
+      }
+    ]
+  },
+  "/treatments/acne-care": {
+    "title": "Tune Acne Care Package",
+    "prices": [
+      {
+        "title": "Tune Acne Care Package",
+        "price": "KRW 99,000",
+        "from": true,
+        "detail": "Acne care with extraction from KRW 99,000; Gold PTT for acne KRW 365,000; acne clearing add-on KRW 65,000; body Gold PTT for acne KRW 550,000; body acne clearing add-on KRW 95,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Tune Acne Care Package",
+        "value": "From KRW 99,000"
+      },
+      {
+        "label": "Protocol",
+        "value": "PDT + Gold PTT physician-designed"
+      },
+      {
+        "label": "Treatment target",
+        "value": "Sebaceous glands and inflammation"
+      },
+      {
+        "label": "Sessions",
+        "value": "Planned at consultation by severity stage"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness, dryness, peeling or a temporary flare can occur, and after PDT you avoid strong light for a period the physician sets; visibility and duration vary by individual and settings",
+        "llmsKey": "downtime"
+      }
+    ]
+  },
+  "/treatments/tenthermalifting": {
+    "title": "TenTherma Lifting",
+    "prices": [
+      {
+        "title": "TenTherma Lifting",
+        "price": "KRW 260,000",
+        "from": true,
+        "detail": "100 shots from KRW 260,000; 300 shots KRW 680,000; 600 shots KRW 1,250,000; eye area 100 shots KRW 330,000; eye area 200 shots KRW 580,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "TenTherma Lifting",
+        "value": "From KRW 260,000"
+      },
+      {
+        "label": "Time in Clinic",
+        "value": "About 15-30 minutes, depending on the area"
+      },
+      {
+        "label": "Anesthesia",
+        "value": "Numbing cream if needed. Comfort varies from person to person"
+      },
+      {
+        "label": "Recovery",
+        "value": "Temporary flushing, warmth or mild swelling can occur. How visible it is and how long it lasts vary, and the physician tells you what to plan for"
+      },
+      {
+        "label": "Maintenance",
+        "value": "Reassessed at follow-up rather than fixed in advance"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Loss of firmness on the face, neck or body, and crepey texture"
+      }
+    ],
+    "evidenceNote": {
+      "id": "evidence-tenthermalifting-30531187",
+      "pmid": "30531187",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30531187/",
+      "scope": "Monopolar radiofrequency as a class, for face and neck laxity. This is modality context only and is not evidence of TenTherma's results. It does not cover eye or body treatment, treatment depth, tip selection or the SMAS layer.",
+      "reader": "A small study of monopolar radiofrequency and microfocused ultrasound reported improvement in facial and neck laxity, but it does not establish results for TenTherma or for any particular treatment plan.",
+      "limitation": "A randomized split-face trial in 20 people followed for six months. Both sides improved with no significant difference between them, which is not evidence that the two treatments are equivalent, and the abstract does not name the commercial devices used."
+    }
+  },
+  "/treatments/inmode-body": {
+    "title": "InMode for the Body",
+    "prices": [
+      {
+        "title": "InMode for the Body",
+        "price": "KRW 275,000",
+        "from": false,
+        "detail": "RF body slimming."
+      }
+    ],
+    "facts": [
+      {
+        "label": "InMode for the Body",
+        "value": "KRW 275,000"
+      },
+      {
+        "label": "How It Works",
+        "value": "Radio frequency with vacuum suction; tip module and settings chosen for each area"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness, warmth and tenderness in the treated area are common afterwards, and bruising can appear where the suction held the skin. How long it shows varies, and the physician confirms what to plan for",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "The look of cellulite and skin firmness on a defined body area. It is not a weight-loss treatment"
+      },
+      {
+        "label": "Tell the physician first",
+        "value": "Pregnancy, a pacemaker, a metal implant in the area, or broken or inflamed skin there"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "The area that bothers you, a daylight photo of it and your dates in Seoul"
+      }
+    ]
+  },
+  "/treatments/ultherapy-us-version": {
+    "title": "Ultherapy",
+    "prices": [
+      {
+        "title": "Ultherapy",
+        "price": "KRW 350,000",
+        "from": true,
+        "href": "/treatments/ultherapy-us-version",
+        "detail": "100 shots from KRW 350,000; 300 shots KRW 900,000; 400 shots KRW 1,200,000; 600 shots KRW 1,750,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Ultherapy",
+        "value": "From KRW 350,000"
+      },
+      {
+        "label": "Energy",
+        "value": "Micro-focused ultrasound"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness, swelling or tenderness along the jaw can occur. How visible it is and how long it lasts vary; the physician tells you what to plan for",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Result timeline",
+        "value": "Change from collagen remodelling builds gradually, not in the same week. The degree and timing vary and are reviewed at follow-up"
+      },
+      {
+        "label": "Dose",
+        "value": "100 / 300 / 400 / 600 shots, set at the assessment"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Early looseness along the jawline, lower face and under the chin"
+      },
+      {
+        "label": "May not suit",
+        "value": "Marked skin excess, a very lean face, or active infection in the area may point to a different plan. The physician decides at assessment"
+      }
+    ],
+    "evidenceNote": {
+      "id": "evidence-ultherapy-us-version-27047630",
+      "pmid": "27047630",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27047630/",
+      "scope": "Microfocused ultrasound with visualization for facial and neck laxity. It does not cover this clinic's device generation, its shot tiers or its treatment protocol.",
+      "reader": "A small, uncontrolled study of microfocused ultrasound with visualization reported improvement in facial and neck laxity, but it cannot predict your result or how long any change will last.",
+      "limitation": "Twenty participants with no control group. At one year, blinded assessors rated 6 of 14 evaluable participants as improved, well below the unblinded and self-reported ratings. Follow-up lasting a year is not a promise of a year of benefit."
+    }
+  },
+  "/treatments/thermage": {
+    "title": "Thermage",
+    "prices": [
+      {
+        "title": "Thermage",
+        "price": "KRW 920,000",
+        "from": true,
+        "href": "/treatments/thermage",
+        "detail": "Eye 225 shots from KRW 920,000; eye 450 shots KRW 1,670,000; face 600 shots KRW 1,870,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Thermage",
+        "value": "From KRW 920,000"
+      },
+      {
+        "label": "Time in Clinic",
+        "value": "About 45-90 min, depending on the area"
+      },
+      {
+        "label": "Comfort",
+        "value": "The tip is cooled, but each pulse can still feel hot. Sensitivity varies"
+      },
+      {
+        "label": "Recovery",
+        "value": "Temporary redness, warmth, swelling or tenderness can occur. How visible it is varies"
+      },
+      {
+        "label": "Result timeline",
+        "value": "Change from collagen remodelling builds gradually over months. The degree and timing vary and are reviewed at follow-up"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Early laxity on the jawline, cheeks and eye area"
+      }
+    ],
+    "evidenceNote": {
+      "id": "evidence-thermage-30531187",
+      "pmid": "30531187",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30531187/",
+      "scope": "Monopolar radiofrequency compared with microfocused ultrasound for mild-to-moderate face and upper-neck laxity. It does not cover a particular Thermage generation, the eye tip, a dose or a combined treatment plan.",
+      "reader": "A small study of monopolar radiofrequency and microfocused ultrasound reported improvement in facial and neck laxity, but it does not establish results for a particular Thermage model or treatment plan.",
+      "limitation": "A randomized split-face trial in 20 people followed for six months. Both sides improved with no significant difference between them, which is not evidence that the two treatments are equivalent, and the abstract does not name the commercial devices used."
+    }
+  },
+  "/treatments/thread-lifting": {
+    "title": "Thread Lifting",
+    "prices": [
+      {
+        "title": "Thread Lifting",
+        "price": "KRW 1,100,000",
+        "from": true,
+        "href": "/treatments/thread-lifting",
+        "detail": "Sunken cheeks or jawline from KRW 1,100,000; advanced areas from KRW 1,320,000; any 3 areas KRW 2,550,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Thread Lifting",
+        "value": "From KRW 1,100,000"
+      },
+      {
+        "label": "Downtime",
+        "value": "Swelling, bruising, tightness or a pulling sensation can occur. How visible it is and how long it lasts vary, and the physician tells you what to plan for",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Anesthesia",
+        "value": "Performed under anesthesia. Comfort during and after the procedure varies"
+      },
+      {
+        "label": "Duration",
+        "value": "The threads are absorbed over time. How long any change holds varies and is not fixed in advance",
+        "llmsKey": "duration"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Sagging in the mid-face, jawline and under the chin"
+      },
+      {
+        "label": "May not suit",
+        "value": "Very heavy skin excess, active skin infection, or a recent procedure in the same area. The physician decides at assessment"
+      }
+    ]
+  },
+  "/treatments/shurink": {
+    "title": "Tune Shurink Lifting",
+    "prices": [
+      {
+        "title": "Tune Shurink Lifting",
+        "price": "KRW 119,000",
+        "from": true,
+        "detail": "300 shots from KRW 119,000; Shurink Universe 300 shots KRW 139,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Tune Shurink Lifting",
+        "value": "From KRW 119,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "A softening jawline and early looseness in the lower face"
+      },
+      {
+        "label": "Time in clinic",
+        "value": "About 15-20 minutes"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness, warmth, tenderness or mild swelling can occur. How visible it is and how long it lasts vary",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Duration",
+        "value": "How long any change holds varies and is reassessed at follow-up rather than promised in advance",
+        "llmsKey": "duration"
+      }
+    ]
+  },
+  "/treatments/rejuran": {
+    "title": "Rejuran",
+    "prices": [
+      {
+        "title": "Rejuran",
+        "price": "KRW 220,000",
+        "from": true,
+        "detail": "Rejuran HB 1cc from KRW 220,000; Rejuran 4cc KRW 538,000; Super Rejuran S 3cc KRW 750,000; Angel Rejuran 4cc KRW 800,000; Fillroad Hydration 4cc (Rejuran affordable alternative) KRW 450,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Rejuran",
+        "value": "From KRW 220,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Skin quality, texture and fine lines"
+      },
+      {
+        "label": "Downtime",
+        "value": "Small bumps, redness or bruising at the injection points may occur",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Time in Clinic",
+        "value": "About 20-30 min"
+      },
+      {
+        "label": "Recovery",
+        "value": "How visible it is and how long it lasts vary from person to person"
+      },
+      {
+        "label": "Plan",
+        "value": "Number of sessions and intervals confirmed at consultation"
+      },
+      {
+        "label": "Tell us first",
+        "value": "Fish or salmon allergy, active skin infection, pregnancy or breastfeeding"
+      }
+    ]
+  },
+  "/treatments/juvelook": {
+    "title": "Juvelook",
+    "prices": [
+      {
+        "title": "Juvelook",
+        "price": "KRW 121,000",
+        "from": true,
+        "detail": "1cc from KRW 121,000; 6cc KRW 600,000; 8cc KRW 800,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Juvelook",
+        "value": "From KRW 121,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Skin texture, pores, fine lines and areas that have lost soft volume"
+      },
+      {
+        "label": "Downtime",
+        "value": "Swelling, small bumps, redness or bruising can occur at injection points; how visible they are and how long they last vary by individual",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Time in Clinic",
+        "value": "About 30 min"
+      },
+      {
+        "label": "Plan",
+        "value": "Number of sessions and intervals confirmed at consultation"
+      },
+      {
+        "label": "Not during",
+        "value": "Pregnancy or breastfeeding, or an active skin infection in the area"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "Front and side photos in daylight without makeup, the area that concerns you, and your dates in Seoul"
+      }
+    ]
+  },
+  "/treatments/botox": {
+    "title": "Tune Botox",
+    "prices": [
+      {
+        "title": "Jaw Slimming Botox",
+        "price": "KRW 58,000",
+        "from": true,
+        "detail": "Korean Botox KRW 58,000; Coretox KRW 88,000; Xeomin KRW 150,000; Allergan KRW 250,000.",
+        "qualifier": "Final price confirmed at consultation"
+      },
+      {
+        "title": "Forehead Wrinkle Botox",
+        "price": "KRW 15,000",
+        "from": true,
+        "detail": "Korean Botox KRW 15,000; Coretox KRW 39,000; Xeomin KRW 110,000; Allergan KRW 180,000.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Wrinkles, a square jaw & body line concerns"
+      },
+      {
+        "label": "Downtime",
+        "value": "Temporary redness, small injection-point bumps or bruising can occur; visible recovery varies by individual and treatment area, and the physician confirms what to plan for",
+        "llmsKey": "downtime"
+      }
+    ],
+    "evidenceNote": {
+      "id": "evidence-botox-38914688",
+      "pmid": "38914688",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38914688/",
+      "scope": "Enlarged jaw muscle (masseter) only. It does not cover the forehead, the eye area, between the brows, around the mouth, the shoulders, the calves, pores or teeth grinding, and it does not establish a dose or a schedule for the products priced on this page.",
+      "reader": "A small trial in women with enlarged jaw muscles found changes in muscle size after botulinum toxin, while repeated treatment also affected muscle function, so it does not establish a universal dose or schedule.",
+      "limitation": "A randomized triple-blinded study in 26 women using abobotulinumtoxinA at 75 units per masseter, a preparation and dose that do not convert to the products listed here. The first treatment was not placebo-controlled, and masticatory performance did not differ significantly between the repeat-treatment groups."
+    }
+  },
+  "/treatments/potenza": {
+    "title": "Potenza",
+    "prices": [
+      {
+        "title": "Potenza",
+        "price": "KRW 165,000",
+        "from": true,
+        "detail": "Diamond 100 shots from KRW 165,000; DDR 500 shots KRW 290,000; DDR 500 shots + Dia 500 shots KRW 880,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Potenza",
+        "value": "From KRW 165,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Enlarged pores, laxity, uneven texture"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness or swelling can occur; how visible they are and how long they last vary by individual and settings",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Tips",
+        "value": "SFA / Diamond / DDR surface-contact tips selected after assessment"
+      },
+      {
+        "label": "Course",
+        "value": "Number of sessions confirmed after assessment"
+      },
+      {
+        "label": "Numbing",
+        "value": "Topical numbing cream before treatment"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "Close-up photos of the area in daylight, what bothers you most, and your dates in Seoul"
+      }
+    ]
+  },
+  "/treatments/radiesse": {
+    "title": "Radiesse",
+    "prices": [
+      {
+        "title": "Radiesse",
+        "price": "KRW 1,100,000",
+        "from": true,
+        "detail": "Face 1 syringe KRW 1,100,000; body 1 syringe KRW 1,300,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Radiesse",
+        "value": "From KRW 1,100,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Jawline and cheek contour, or loose skin on the lower face and neck"
+      },
+      {
+        "label": "Downtime",
+        "value": "Swelling, bruising or tenderness can occur; how visible it is and how long it lasts vary by individual and injection area",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Time in Clinic",
+        "value": "About 20 to 30 min"
+      },
+      {
+        "label": "Plan",
+        "value": "Preparation, volume and any follow-up confirmed after physician assessment"
+      },
+      {
+        "label": "Not used in",
+        "value": "The lips. It is also postponed during pregnancy or breastfeeding"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "Front and side photos in daylight, any filler you have had before, and your dates in Seoul"
+      }
+    ]
+  },
+  "/treatments/lip-filler": {
+    "title": "Tune Lip Filler",
+    "prices": [
+      {
+        "title": "Tune Lip Filler",
+        "price": "KRW 385,000",
+        "from": false,
+        "detail": "Lip shape and volume refinement."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Tune Lip Filler",
+        "value": "KRW 385,000"
+      },
+      {
+        "label": "Downtime",
+        "value": "Lips swell easily. Bruising or swelling can occur; how visible it is and how long it lasts vary by individual, and the physician confirms what to plan for",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Lip volume, the lip border, mouth corners and symmetry"
+      },
+      {
+        "label": "Procedure time",
+        "value": "About 10 to 15 minutes of injecting, after numbing; topical anesthetic or a nerve block"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "A front photo of your lips at rest, the look you have in mind, any previous lip filler, and your dates in Seoul"
+      }
+    ]
+  },
+  "/treatments/onda-lifting": {
+    "title": "Onda Lifting",
+    "prices": [
+      {
+        "title": "Onda Lifting",
+        "price": "KRW 850,000",
+        "from": true,
+        "detail": "60,000J from KRW 850,000; 80,000J KRW 1,100,000; 100,000J KRW 1,200,000; body 200,000J KRW 1,800,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Onda Lifting",
+        "value": "From KRW 850,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Cellulite, localized fat & laxity"
+      },
+      {
+        "label": "Downtime",
+        "value": "Temporary redness, warmth, tenderness or mild swelling in the treated area can occur; visible recovery varies by individual and area, and the physician confirms what to plan for",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Time in Clinic",
+        "value": "Varies by area (confirmed at consultation)"
+      },
+      {
+        "label": "Plan",
+        "value": "A course is often recommended; the number of sessions is set after assessment"
+      },
+      {
+        "label": "Tell the physician first",
+        "value": "A pacemaker, metal implants in the area, pregnancy or breastfeeding, or inflamed skin there"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "The area you want treated, a daylight photo of it, and your dates in Seoul"
+      }
+    ]
+  },
+  "/treatments/inmode": {
+    "title": "Tune InMode",
+    "prices": [
+      {
+        "title": "Tune InMode",
+        "price": "KRW 135,000",
+        "from": true,
+        "detail": "FX from KRW 135,000; Forma RF KRW 165,000; 1+2 step fat-melting KRW 265,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Tune InMode",
+        "value": "From KRW 135,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Chin fat, double chin & a rounder face, and whether the fullness is fat or loose skin"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness, warmth, tenderness or swelling can occur; how visible they are and how long they last vary by individual and area, and the physician confirms when heat, saunas and hard exercise can resume",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Energy",
+        "value": "Radiofrequency; module selected at assessment"
+      },
+      {
+        "label": "Modules",
+        "value": "FX \u00b7 Forma RF \u00b7 fat-reduction step, selected at assessment"
+      }
+    ]
+  },
+  "/treatments/ear-filler": {
+    "title": "Tune Ear Filler",
+    "prices": [
+      {
+        "title": "Tune Ear Filler",
+        "price": "KRW 300,000",
+        "from": true,
+        "detail": "Juvederm 1cc KRW 560,000; Belotero 1cc KRW 500,000; Restylane 1cc KRW 460,000; Yvoire 1cc KRW 375,000; Rejuviel 1cc KRW 375,000; Revolline 1cc KRW 300,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Tune Ear Filler",
+        "value": "From KRW 300,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Helix, ear root and earlobe dimension"
+      },
+      {
+        "label": "Downtime",
+        "value": "Temporary bruising, swelling or tenderness can occur; how visible it is and how long it lasts vary by individual, and the physician confirms what to plan for",
+        "llmsKey": "downtime"
+      }
+    ]
+  },
+  "/treatments/tune-rituo": {
+    "title": "Tune Re2O",
+    "prices": [
+      {
+        "title": "Collagen Booster",
+        "price": "KRW 600,000",
+        "from": true,
+        "detail": "Lateigen 2cc from KRW 600,000; Elravie Re2O 6.5cc or Juveacell 5cc KRW 770,000.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Menu item",
+        "value": "Collagen Booster"
+      },
+      {
+        "label": "Re2O option",
+        "value": "Elravie Re2O 6.5cc \u00b7 KRW 770,000; the family starting price is Lateigen 2cc at KRW 600,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Loss of firmness and skin quality"
+      },
+      {
+        "label": "Procedure Time",
+        "value": "Around 30 minutes; outpatient visit"
+      },
+      {
+        "label": "Intended action",
+        "value": "Support of collagen and elastin in the treated area"
+      },
+      {
+        "label": "Downtime",
+        "value": "Small injection marks, redness, swelling or bruising can occur. How visible they are and how long they last vary",
+        "llmsKey": "downtime"
+      }
+    ]
+  },
+  "/treatments/tuneliner-face": {
+    "title": "Tuneliner Face",
+    "prices": [
+      {
+        "title": "Tuneliner Face",
+        "price": "KRW 240,000",
+        "from": false,
+        "detail": "One session."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Tuneliner Face",
+        "value": "KRW 240,000"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Mild laxity and a softening facial contour"
+      },
+      {
+        "label": "Downtime",
+        "value": "Visible recovery is often limited, but temporary redness or tenderness can occur and varies from person to person",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Time in Clinic",
+        "value": "Depends on the area; confirmed at consultation"
+      },
+      {
+        "label": "Plan",
+        "value": "A course is often suggested; the number of sessions and the interval are set by the physician"
+      }
+    ]
+  },
+  "/treatments/oligio": {
+    "title": "Oligio Thermal RF Lifting",
+    "prices": [
+      {
+        "title": "Oligio Thermal RF Lifting",
+        "price": "KRW 430,000",
+        "from": true,
+        "detail": "300 shots or eye 200 shots from KRW 430,000; 600 shots or eye 400 shots KRW 820,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Oligio Thermal RF Lifting",
+        "value": "From KRW 430,000"
+      },
+      {
+        "label": "Energy",
+        "value": "Monopolar radiofrequency"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness, warmth or mild swelling can occur. How visible it is and how long it lasts vary; the physician tells you what to plan for",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Result timing",
+        "value": "Change from collagen remodelling builds gradually over months. The degree and timing vary and are reviewed at follow-up"
+      },
+      {
+        "label": "Areas",
+        "value": "Face 300 or 600 shots; eye 200 or 400 shots"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Skin laxity and crepey texture on the face and around the eyes"
+      }
+    ],
+    "evidenceNote": {
+      "id": "evidence-oligio-30531187",
+      "pmid": "30531187",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30531187/",
+      "scope": "Monopolar radiofrequency as a class. This is modality context only. It is not evidence of Oligio's results, not evidence that Oligio is equivalent to Thermage, and it does not support the comparison, price, comfort or maintenance statements elsewhere on this page.",
+      "reader": "A small study of monopolar radiofrequency and microfocused ultrasound reported improvement in facial and neck laxity, but it does not establish results for Oligio or for any particular treatment plan.",
+      "limitation": "A randomized split-face trial in 20 people followed for six months. Both sides improved with no significant difference between them, which is not evidence that the two treatments are equivalent, and the abstract does not name the commercial devices used."
+    }
+  },
+  "/treatments/chin-filler": {
+    "title": "Tune Chin Filler",
+    "prices": [
+      {
+        "title": "Face Filler 1cc",
+        "price": "KRW 150,000",
+        "from": true,
+        "detail": "Revolline 1cc KRW 150,000; Rejuviel 1cc KRW 180,000; Yvoire 1cc KRW 180,000; Restylane 1cc KRW 340,000; Belotero 1cc KRW 340,000; Juvederm 1cc KRW 380,000. The chin usually takes 1 to 2cc."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Tune Chin Filler",
+        "value": "From KRW 150,000 per 1cc"
+      },
+      {
+        "label": "Consultation focus",
+        "value": "Chin projection, chin length and the lip-to-chin line"
+      },
+      {
+        "label": "Downtime",
+        "value": "Swelling, tenderness or a bruise at the injection point can occur; most patients return to normal activity the same day, and how long any swelling lasts varies by individual",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Time in Clinic",
+        "value": "About 20\u201330 min"
+      },
+      {
+        "label": "Plan",
+        "value": "Product, amount and whether a second session is needed are confirmed at consultation"
+      }
+    ]
+  },
+  "/concerns/sagging-and-laxity": {
+    "title": "Sagging jawline and cheeks",
+    "prices": [
+      {
+        "title": "Ultherapy",
+        "price": "KRW 350,000",
+        "from": true,
+        "href": "/treatments/ultherapy-us-version",
+        "detail": "100 shots from KRW 350,000; 300 shots KRW 900,000; 400 shots KRW 1,200,000; 600 shots KRW 1,750,000."
+      },
+      {
+        "title": "Thermage",
+        "price": "KRW 920,000",
+        "from": true,
+        "href": "/treatments/thermage",
+        "detail": "Eye 225 shots from KRW 920,000; eye 450 shots KRW 1,670,000; face 600 shots KRW 1,870,000."
+      },
+      {
+        "title": "Thread Lifting",
+        "price": "KRW 1,100,000",
+        "from": true,
+        "href": "/treatments/thread-lifting",
+        "detail": "Sunken cheeks or jawline from KRW 1,100,000; advanced areas from KRW 1,320,000; any 3 areas KRW 2,550,000."
+      },
+      {
+        "title": "Oligio Thermal RF Lifting",
+        "price": "KRW 430,000",
+        "from": true,
+        "detail": "300 shots or eye 200 shots from KRW 430,000; 600 shots or eye 400 shots KRW 820,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Treatment options",
+        "value": "Ultherapy / Thermage / Thread Lifting / Oligio Thermal RF Lifting"
+      }
+    ]
+  },
+  "/concerns/pigmentation": {
+    "title": "Pigmentation, melasma, and dark spots",
+    "prices": [
+      {
+        "title": "The First Pigment laser Omakase",
+        "price": "KRW 330,000",
+        "from": false,
+        "detail": "Enlighten Pico toning + Clarity Pro + targeted pigment laser + free physician consultation."
+      },
+      {
+        "title": "Pigmentation Deep Treatment",
+        "price": "KRW 330,000",
+        "from": false,
+        "detail": "Cutera laser pigment treatment."
+      },
+      {
+        "title": "Pigmentation Combo",
+        "price": "KRW 165,000",
+        "from": true,
+        "detail": "Two-device pigmentation combo from KRW 165,000; super multi-clean pigment treatment KRW 220,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Ordinary Pigment",
+        "value": "Small, sharply defined dot-like pattern"
+      },
+      {
+        "label": "Deep Pigment",
+        "value": "Broadly spread, blurry-bordered patch pigment"
+      }
+    ]
+  },
+  "/concerns/acne-scarring": {
+    "title": "Acne scars and post-acne marks",
+    "prices": [
+      {
+        "title": "Juvelook Skin + Device Acne Scar Program",
+        "price": "KRW 165,000",
+        "from": true,
+        "detail": "Juvelook skin 1cc + subcision from KRW 165,000; Potenza or Genesis laser + Cutera laser KRW 220,000; Juvelook 1cc + subcision + Potenza or Cutera laser + cica soothing facial KRW 330,000; Juvelook 1cc + subcision + Potenza + Cutera + Genesis laser + cica soothing facial KRW 440,000."
+      },
+      {
+        "title": "CICU Fractional Laser",
+        "price": "KRW 220,000",
+        "from": false,
+        "detail": "One session including calming care."
+      },
+      {
+        "title": "Subcision for Acne Scars",
+        "price": "KRW 380,000",
+        "from": false,
+        "detail": "One acne-scar area."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Concern pattern",
+        "value": "Atrophic & rolling scars"
+      },
+      {
+        "label": "Downtime",
+        "value": "Varies by modality",
+        "llmsKey": "downtime"
+      }
+    ]
+  },
+  "/concerns/volume-loss": {
+    "title": "Volume loss",
+    "prices": [
+      {
+        "title": "Juvelook",
+        "price": "KRW 121,000",
+        "from": true,
+        "href": "/treatments/juvelook",
+        "detail": "1cc from KRW 121,000; 6cc KRW 600,000; 8cc KRW 800,000."
+      },
+      {
+        "title": "Radiesse",
+        "price": "KRW 1,100,000",
+        "from": true,
+        "href": "/treatments/radiesse",
+        "detail": "Face 1 syringe KRW 1,100,000; body 1 syringe KRW 1,300,000."
+      },
+      {
+        "title": "Thread Lifting",
+        "price": "KRW 1,100,000",
+        "from": true,
+        "href": "/treatments/thread-lifting",
+        "detail": "Sunken cheeks or jawline from KRW 1,100,000; advanced areas from KRW 1,320,000; any 3 areas KRW 2,550,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Concern pattern",
+        "value": "Sagging cheeks & a hollow, heavy facial line"
+      }
+    ]
+  },
+  "/concerns/enlarged-pores": {
+    "title": "Enlarged pores",
+    "prices": [
+      {
+        "title": "Potenza Jeisys RF",
+        "price": "KRW 165,000",
+        "from": true,
+        "detail": "Diamond 100 shots from KRW 165,000; DDR 500 shots KRW 290,000; DDR 500 shots + Dia 500 shots KRW 880,000."
+      },
+      {
+        "title": "Potenza Pore / Acne Cartridge",
+        "price": "KRW 180,000",
+        "from": false,
+        "detail": "Pore cartridge KRW 180,000; acne treatment cartridge KRW 180,000; acne injection up to 5 lesions KRW 110,000."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Concern pattern",
+        "value": "Enlarged pores, laxity, uneven texture"
+      }
+    ]
+  },
+  "/treatments/acne-scar": {
+    "title": "Acne Scar Revision",
+    "prices": [
+      {
+        "title": "Juvelook Skin + Device Acne Scar Program",
+        "price": "KRW 165,000",
+        "from": true,
+        "detail": "Starting option: Juvelook Skin 1cc + subcision. Device combinations are separate options selected after assessment.",
+        "qualifier": "Final price confirmed at consultation"
+      },
+      {
+        "title": "Subcision for Acne Scars",
+        "price": "KRW 380,000",
+        "from": false,
+        "detail": "Standalone subcision for one acne-scar area, priced separately from the combined program package rate. Confirm the scope when comparing these options.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Scar type (rolling, boxcar or icepick), whether acne is still active, and how much recovery time you have between sessions"
+      },
+      {
+        "label": "Components & units",
+        "value": "Juvelook Skin 1cc + subcision"
+      },
+      {
+        "label": "Downtime",
+        "value": "Depends on the methods used. Redness, swelling, bruising or peeling can last from a few days to about a week and varies by individual; confirm a travel buffer with the physician.",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      },
+      {
+        "label": "Time in clinic",
+        "value": "About 30 to 60 minutes, depending on the methods used"
+      }
+    ]
+  },
+  "/treatments/alltite": {
+    "title": "Tune Alltite",
+    "prices": [
+      {
+        "title": "Alltite",
+        "price": "KRW 200,000",
+        "from": true,
+        "detail": "100 shots KRW 200,000; the 400-shot plan is KRW 750,000.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "How much laxity there is, where it sits (jawline, jowls or lower face), and how you tolerate heat"
+      },
+      {
+        "label": "Components & units",
+        "value": "Alltite 100-shot starting option; 400-shot plan available"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness and warmth are common after the session and usually settle the same day. Recovery varies by individual; confirm aftercare and a travel buffer with the physician.",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      }
+    ]
+  },
+  "/treatments/cheek-hollow-lifting": {
+    "title": "Cheek Hollow Lifting",
+    "prices": [
+      {
+        "title": "Thread Lifting",
+        "price": "KRW 1,100,000",
+        "from": true,
+        "detail": "Sunken cheeks or jawline starting option. Thread type, count, direction and treated area are confirmed after assessment.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Where the cheek has dropped, how thin the skin is, and whether volume loss needs a separate treatment"
+      },
+      {
+        "label": "Components & units",
+        "value": "Thread lifting \u00b7 thread type, count and area confirmed at assessment"
+      },
+      {
+        "label": "Downtime",
+        "value": "Swelling, bruising, tightness and tenderness when opening the mouth wide can occur. How long they last varies by individual; confirm a buffer before travel with the physician.",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      }
+    ]
+  },
+  "/treatments/coolsoniq": {
+    "title": "Tune CoolSoniq",
+    "prices": [
+      {
+        "title": "CoolSoniq",
+        "price": "KRW 660,000",
+        "from": true,
+        "detail": "3000 shots from KRW 660,000; 6000 shots KRW 1,320,000; per additional 1000 shots KRW 220,000.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Laxity along the jawline, lower face and brow, and any previous HIFU and how you tolerated it"
+      },
+      {
+        "label": "Components & units",
+        "value": "CoolSoniq 3000 shots / 6000 shots"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness, mild swelling or tenderness along the jaw can occur, and occasionally small bruises. How long these last varies by individual; confirm a buffer before travel with the physician.",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      }
+    ]
+  },
+  "/treatments/enlighten": {
+    "title": "Tune Enlighten",
+    "prices": [
+      {
+        "title": "Pigmentation Deep Treatment",
+        "price": "KRW 330,000",
+        "from": false,
+        "detail": "Cutera Enlighten laser pigment treatment. Final treatment plan confirmed after assessment.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "What the pigment is (freckles, sun spots, melasma or deeper pigment), how deep it sits, and how sensitive your skin is"
+      },
+      {
+        "label": "Components & units",
+        "value": "Cutera Enlighten \u00b7 532nm + 1,064nm"
+      },
+      {
+        "label": "Downtime",
+        "value": "Mild redness or tightness can occur, and surface spots can darken and flake before they fade. Recovery varies by individual and by pigment type.",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      }
+    ]
+  },
+  "/treatments/fat-dissolving-injection": {
+    "title": "Fat-Dissolving Injection",
+    "prices": [
+      {
+        "title": "Super Contour Fat-Dissolving Injection 20cc",
+        "price": "KRW 75,000",
+        "from": false,
+        "detail": "One 20cc fat-dissolving injection for one area, subject to assessment.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Whether the fullness is fat, loose skin or muscle, and whether the area is small enough for injection"
+      },
+      {
+        "label": "Components & units",
+        "value": "20cc \u00b7 1 area"
+      },
+      {
+        "label": "Downtime",
+        "value": "Swelling, tenderness, firmness and bruising can occur. Under the chin, swelling can be obvious for the first day or two; this varies by individual.",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      },
+      {
+        "label": "Time in clinic",
+        "value": "About 15 to 20 minutes"
+      }
+    ]
+  },
+  "/treatments/iv-therapy": {
+    "title": "IV Therapy & Drips",
+    "prices": [
+      {
+        "title": "Infusion Shots",
+        "price": "KRW 40,000",
+        "from": true,
+        "detail": "Starting option: placenta drip KRW 40,000. Other formulations have separate prices and require a medical check.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Goals and medical background"
+      },
+      {
+        "label": "Components & units",
+        "value": "Physician-selected IV formulation"
+      },
+      {
+        "label": "Downtime",
+        "value": "A small bruise can appear at the needle site. Tell the physician what you have planned for the rest of the day",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      },
+      {
+        "label": "Time in clinic",
+        "value": "About 30 to 60 minutes, depending on the formulation"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "What you would like the drip for, any allergies or regular medication, and the day you want to come in"
+      }
+    ]
+  },
+  "/treatments/laser-hair-removal": {
+    "title": "Laser Hair Removal",
+    "prices": [
+      {
+        "title": "Female Hair Removal",
+        "price": "KRW 110,000",
+        "from": true,
+        "detail": "Hairline or jawline, choose one, from KRW 110,000 per session; body area KRW 330,000.",
+        "qualifier": "Final price confirmed at consultation"
+      },
+      {
+        "title": "Male Hair Removal",
+        "price": "KRW 132,000",
+        "from": true,
+        "detail": "Hairline or jawline, choose one, from KRW 132,000 per session; body area KRW 380,000.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Long-term hair reduction"
+      },
+      {
+        "label": "Components & units",
+        "value": "Per area \u00b7 per session"
+      },
+      {
+        "label": "Downtime",
+        "value": "Redness and small bumps around the hair follicles can appear straight after. How long they last varies; keep the area out of the sun",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      },
+      {
+        "label": "Course",
+        "value": "Several sessions spaced weeks apart; the number depends on the area, your hair and skin tone, and is reviewed as you go"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "The areas you want treated, your hair color and skin tone, any recent tan, and how often you can be in Seoul"
+      }
+    ]
+  },
+  "/treatments/neck-wrinkle-filler": {
+    "title": "Neck Wrinkle Filler",
+    "prices": [
+      {
+        "title": "Neck Wrinkle Filler + PDRN",
+        "price": "KRW 385,000",
+        "from": false,
+        "detail": "The Chaeum filler 1cc with PDRN injection 1cc.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Horizontal neck lines, early neck creping"
+      },
+      {
+        "label": "Components & units",
+        "value": "The Chaeum 1cc + PDRN 1cc"
+      },
+      {
+        "label": "Downtime",
+        "value": "Small bumps, injection marks, swelling or bruising along the lines can occur; how long they show varies by individual",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      },
+      {
+        "label": "Realistic aim",
+        "value": "Softer-looking creases, not a line-free neck"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "A photo of your neck in daylight with your chin level, and your dates in Seoul"
+      }
+    ],
+    "evidenceNote": {
+      "id": "evidence-neck-wrinkle-filler-34188752",
+      "pmid": "34188752",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34188752/",
+      "scope": "General preparedness for a blocked blood vessel after cross-linked hyaluronic-acid filler, relevant to the hyaluronic-acid component of this treatment. It is not neck-specific safety or efficacy evidence, and it is not evidence for The Chaeum with PDRN as a combined plan.",
+      "reader": "Guidance on hyaluronic-acid fillers emphasizes prompt recognition and treatment of a blocked blood vessel; it does not establish the safety of this neck treatment or remove the risk of complications.",
+      "limitation": "Clinical practice guidance rather than a trial. It has no enrolled cohort, reports no complication rate, compares no products, and cautions against describing any injection area as safe."
+    }
+  },
+  "/treatments/pdrn-salmon-injection": {
+    "title": "PDRN Salmon Injection",
+    "prices": [
+      {
+        "title": "PDRN 1cc",
+        "price": "KRW 110,000",
+        "from": false,
+        "detail": "PDRN injection, 1cc.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Tired, damaged or sensitive skin"
+      },
+      {
+        "label": "Components & units",
+        "value": "PDRN 1cc"
+      },
+      {
+        "label": "Downtime",
+        "value": "Small bumps, redness or swelling at the injection points can occur; how long they last varies by individual",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      },
+      {
+        "label": "Ingredient",
+        "value": "PDRN (polydeoxyribonucleotide), DNA fragments purified from salmon"
+      },
+      {
+        "label": "Send on WhatsApp",
+        "value": "Photos of your skin in daylight without makeup, what bothers you, any fish allergy, and your dates in Seoul"
+      }
+    ]
+  },
+  "/treatments/skin-care": {
+    "title": "Skin Care & Management",
+    "prices": [
+      {
+        "title": "Comprehensive Tech-Based Skincare",
+        "price": "KRW 77,000",
+        "from": true,
+        "detail": "Ion or LED care from KRW 77,000; LDM or blackhead treatment KRW 100,000; bridal mask care KRW 110,000. Program selected after assessment.",
+        "qualifier": "Final price confirmed at consultation"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Consultation focus",
+        "value": "Dry, reactive or recently treated skin, and upkeep between procedures"
+      },
+      {
+        "label": "Components & units",
+        "value": "Ion or LED care, LDM, blackhead care or bridal mask care, chosen after your skin is checked"
+      },
+      {
+        "label": "Downtime",
+        "value": "Recovery varies with the treatment and the individual. Confirm aftercare and a buffer for events and travel with the physician.",
+        "llmsKey": "downtime"
+      },
+      {
+        "label": "Your plan",
+        "value": "Final components, units and quote are confirmed at the in-person consultation."
+      },
+      {
+        "label": "Performed by",
+        "value": "An esthetician, within the physician's treatment plan"
+      }
+    ]
+  }
+}

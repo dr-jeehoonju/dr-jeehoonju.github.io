@@ -1,0 +1,12 @@
+---
+import { care } from "../../../lib/care";
+import CarePage from "../../../components/CarePage.astro";
+export function getStaticPaths() {
+  return care
+    .filter((x) => x.kind === "concern")
+    .map((record) => ({ params: { slug: record.slug }, props: { record } }));
+}
+const { record } = Astro.props;
+---
+
+<CarePage record={record} />

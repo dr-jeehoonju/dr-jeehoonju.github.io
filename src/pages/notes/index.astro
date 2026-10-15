@@ -1,0 +1,41 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+const notes = await getCollection("notes");
+---
+
+<Layout
+  title="Notes and perspectives"
+  description="Notes on medicine, communication and building from Dr. Jee Hoon Ju."
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">Notes & perspectives</p>
+    <h1>
+      Thinking,
+      <br />
+      <em>in public.</em>
+    </h1>
+    <p class="lead">
+      Questions from the consultation room and the work of building.
+    </p>
+  </div>
+  <section class="wrap section">
+    <div class="grid-3">
+      {notes.map((n) => (
+        <a class="index-card" href={`/notes/${n.id}/`}>
+          <span class="eyebrow">{n.data.category}</span>
+          <h3>{n.data.title}</h3>
+          <p>{n.data.description}</p>
+        </a>
+      ))}
+      <a class="index-card" href="/errata/">
+        <span class="eyebrow">The original public record</span>
+        <h3>Founder’s Errata ↗</h3>
+        <p>
+          What I have changed my mind about, and why. Existing entries remain at
+          their original addresses.
+        </p>
+      </a>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,110 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BookingCTA from "../components/BookingCTA.astro";
+---
+
+<Layout
+  title="Meet Dr. Jee Hoon Ju"
+  description="Dr. Jee Hoon Ju is an aesthetic medicine physician and International Director at Tune Clinic, Seoul, and founder of AetherHeal."
+>
+  <section class="wrap section grid-2">
+    <div>
+      <p class="eyebrow">Physician & founder</p>
+      <h1>
+        Jee Hoon Ju.
+        <br />
+        <em>A wider view.</em>
+      </h1>
+      <p class="lead">
+        Aesthetic medicine physician.
+        <br />
+        International Director, Tune Clinic.
+        <br />
+        Founder, AetherHeal Global Inc.
+      </p>
+      <p class="muted">
+        I work with international patients in Seoul and build technology around
+        the practical questions that arise in medicine: how to explain, how to
+        decide, and how to keep people informed.
+      </p>
+      <a class="button" href="/book/">
+        Book at Tune Clinic ↗
+      </a>
+    </div>
+    <img
+      class="portrait"
+      src="/images/dr-ju.webp"
+      alt="Dr. Jee Hoon Ju"
+      width="960"
+      height="1200"
+    />
+  </section>
+  <section class="section wrap rule grid-2">
+    <div>
+      <p class="eyebrow">Approach</p>
+      <h2>
+        Listen carefully.
+        <br />
+        Explain <em>clearly.</em>
+      </h2>
+    </div>
+    <div>
+      <p class="large-copy">
+        A consultation should leave you with a better understanding of your
+        choices.
+      </p>
+      <p class="muted">
+        That means talking about what concerns you, the change you hope to see,
+        previous treatment, and your time in Korea. It also means discussing
+        uncertainty, alternatives and the option to wait.
+      </p>
+      <p class="muted">
+        Evidence informs the conversation. Your assessment determines whether a
+        treatment is appropriate. The clinic confirms who will provide your
+        care; booking through this website does not guarantee Dr. Ju as your
+        treating physician.
+      </p>
+    </div>
+  </section>
+  <section class="wrap section rule">
+    <p class="eyebrow">Background</p>
+    <h2>
+      Education &<br />
+      <em>professional interests.</em>
+    </h2>
+    <div class="grid-3">
+      <div class="panel">
+        <span class="number">01 / Medical education</span>
+        <h3>University of Debrecen</h3>
+        <p>
+          Medical School. Listed in the current Tune Clinic physician profile.
+        </p>
+      </div>
+      <div class="panel">
+        <span class="number">02 / Continuing education</span>
+        <h3>AI in Health Care</h3>
+        <p>
+          MIT Sloan Executive Education. Executive education is distinct from an
+          MIT degree.
+        </p>
+      </div>
+      <div class="panel">
+        <span class="number">03 / Clinical communication</span>
+        <h3>Care across borders</h3>
+        <p>
+          English-speaking consultation and international patient coordination
+          at Tune Clinic.
+        </p>
+      </div>
+    </div>
+    <p class="fineprint" style="margin-top:25px">
+      Professional background source:{" "}
+      <a href="https://tuneclinic-global.com/doctors">
+        Tune Clinic physician profile ↗
+      </a>
+      . This site does not claim dermatology or plastic surgery specialist
+      certification.
+    </p>
+  </section>
+  <BookingCTA />
+</Layout>

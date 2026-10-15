@@ -1,0 +1,220 @@
+---
+const ids = [
+  "DeHXk8-vVpi",
+  "Ddsr8-XTCe6",
+  "Deb8krXhYNZ",
+  "Dd37HFMhsZV",
+  "DdauUL1BBNv",
+  "DdIucvhhF8G",
+  "DdDW9-qhzbd",
+  "DdDVinEBxUj",
+  "Dc_NoxZBwhm",
+  "Dc2v5TfvjNM",
+  "Dcf3hNDR8tH",
+  "DcSQCNThyQ_",
+  "DcmhPEws88Q",
+  "DbcT6dqBhzt",
+  "DZZRBcwhk2H",
+  "DZMeA1lzlpH",
+  "DZpJwkvB8u1",
+  "DZgw2vnPAlr",
+];
+---
+
+<section class="section wrap">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">People & place</p>
+      <h2>
+        A glimpse of the
+        <br />
+        <em>experience.</em>
+      </h2>
+    </div>
+    <div>
+      <p class="muted" style="max-width:360px;font-size:.85rem">
+        Creator collaborations and moments at Tune Clinic, shared on the
+        clinic’s Instagram.
+      </p>
+      <div class="rail-controls">
+        <button data-rail-dir="-1" aria-label="Previous videos">
+          ←
+        </button>
+        <button data-rail-dir="1" aria-label="Next videos">
+          →
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="rail"
+    tabindex="0"
+    role="region"
+    aria-label="Tune Clinic Instagram videos"
+  >
+    {ids.map((id, i) => (
+      <article>
+        <a
+          href={`https://www.instagram.com/p/${id}/`}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-video={id}
+          data-event="video_play"
+          aria-label={`Watch clinic video ${i + 1}`}
+          draggable="false"
+        >
+          <img
+            src={`https://tuneclinic-global.com/media/instagram/${id}.webp`}
+            width="480"
+            height="854"
+            loading="lazy"
+            decoding="async"
+            alt={`Tune Clinic creator collaboration ${i + 1}`}
+            draggable="false"
+          />
+          <span class="caption">
+            {String(i + 1).padStart(2, "0")} / Watch video ↗
+          </span>
+        </a>
+      </article>
+    ))}
+  </div>
+  <p class="fineprint">
+    Includes promotional collaborations. Individual experiences and results
+    vary. Original posts provide the creator’s context and disclosures.
+  </p>
+</section>
+<dialog id="clinic-video" aria-labelledby="video-title">
+  <div class="video-top">
+    <h2 id="video-title">A moment at Tune Clinic</h2>
+    <button data-close-video aria-label="Close video">
+      ✕
+    </button>
+  </div>
+  <video controls playsinline preload="none"></video>
+  <p class="fineprint">
+    Promotional collaboration. Individual experiences and results vary.
+  </p>
+  <a
+    class="text-link"
+    data-video-source
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View the original Instagram post ↗
+  </a>
+</dialog>
+<style>
+  dialog {
+    background: #080d18;
+    color: #f1eee7;
+    border: 1px solid #a5afbf55;
+    width: min(520px, 94vw);
+    padding: 22px;
+    max-height: 92vh;
+  }
+  dialog::backdrop {
+    background: #000c;
+  }
+  dialog video {
+    width: 100%;
+    max-height: 64vh;
+    display: block;
+  }
+  .video-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .video-top h2 {
+    font-size: 1.4rem;
+  }
+  .video-top button {
+    background: none;
+    color: inherit;
+    border: 0;
+    font-size: 1.2rem;
+  }
+</style>
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>("#clinic-video");
+  const video = dialog?.querySelector("video");
+  let opener: HTMLElement | null = null;
+  document.querySelectorAll<HTMLAnchorElement>("[data-video]").forEach((link) =>
+    link.addEventListener("click", (e) => {
+      if (e.defaultPrevented || !dialog || !video) return;
+      e.preventDefault();
+      opener = link;
+      const id = link.dataset.video;
+      if (!id) return;
+      video.src = `https://tuneclinic-global.com/media/instagram/${id}.mp4`;
+      const source = dialog.querySelector<HTMLAnchorElement>(
+        "[data-video-source]",
+      );
+      if (source) source.href = link.href;
+      dialog.showModal();
+      video.play().catch(() => {});
+    }),
+  );
+  dialog
+    ?.querySelector("[data-close-video]")
+    ?.addEventListener("click", () => dialog.close());
+  dialog?.addEventListener("close", () => {
+    video?.pause();
+    video?.removeAttribute("src");
+    video?.load();
+    opener?.focus();
+  });
+  const rail = document.querySelector<HTMLElement>(".rail");
+  document.querySelectorAll<HTMLButtonElement>("[data-rail-dir]").forEach((b) =>
+    b.addEventListener("click", () =>
+      rail?.scrollBy({
+        left: Number(b.dataset.railDir) * 350,
+        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "instant"
+          : "smooth",
+      }),
+    ),
+  );
+  if (rail) {
+    let start = 0,
+      scroll = 0,
+      drag = false,
+      moved = false;
+    rail.addEventListener("pointerdown", (e) => {
+      if (e.pointerType !== "mouse") return;
+      start = e.clientX;
+      scroll = rail.scrollLeft;
+      drag = true;
+      moved = false;
+    });
+    window.addEventListener("pointermove", (e) => {
+      if (!drag) return;
+      const dx = e.clientX - start;
+      if (Math.abs(dx) > 6) {
+        moved = true;
+        rail.scrollLeft = scroll - dx;
+      }
+    });
+    window.addEventListener("pointerup", () => {
+      drag = false;
+    });
+    rail.addEventListener(
+      "click",
+      (e) => {
+        if (moved) {
+          e.preventDefault();
+          moved = false;
+        }
+      },
+      true,
+    );
+    rail.addEventListener("keydown", (e) => {
+      if (e.target !== rail) return;
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        rail.scrollBy({ left: e.key === "ArrowRight" ? 255 : -255 });
+      }
+    });
+  }
+</script>
