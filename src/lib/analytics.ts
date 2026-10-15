@@ -4,6 +4,9 @@ const id = import.meta.env.PUBLIC_GA4_ID || "";
 const eligible =
   /^G-[A-Z0-9]+$/.test(id) &&
   location.hostname === "jeehoonju.com" &&
+  !document
+    .querySelector<HTMLMetaElement>('meta[name="robots"]')
+    ?.content?.includes("noindex") &&
   !/^\/(book|building)(\/|$)/.test(location.pathname);
 type AnalyticsWindow = Window & {
   dataLayer: unknown[];
@@ -65,7 +68,16 @@ document.querySelectorAll<HTMLElement>("[data-consent]").forEach((b) =>
     } catch {}
     if (banner) banner.hidden = true;
     if (choice === "yes") start();
-    else if (started) location.reload();
+    else {
+      for (const entry of document.cookie.split(";")) {
+        const name = entry.split("=")[0].trim();
+        if (!/^_ga(?:_|$)/.test(name)) continue;
+        for (const domain of ["", location.hostname, `.${location.hostname}`]) {
+          document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax${domain ? `; Domain=${domain}` : ""}`;
+        }
+      }
+      if (started) location.reload();
+    }
   }),
 );
 document.querySelectorAll("[data-cookie-settings]").forEach((b) =>

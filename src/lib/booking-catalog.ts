@@ -27,13 +27,17 @@ const PROGRAM_KEYS = new Map([
 ]);
 
 /** A program the map does not name is offered to nobody, rather than being
- * submitted with an undefined key. scripts/test-booking-contract.mjs fails
- * while this list is non-empty, so a rename is caught before a patient sees
- * it. The clinic's confirmation email prints the same names (see
+ * submitted with an undefined key. The catalog build throws when this list
+ * is non-empty, so a rename is caught before a patient sees it. The clinic's confirmation email prints the same names (see
  * CURRENT_PROGRAM_LABELS in the booking backend's _shared/locale.ts). */
 export const UNMAPPED_PROGRAM_TITLES = FEATURED_PROGRAMS.filter(
   (program) => !PROGRAM_KEYS.has(program.title),
 ).map((program) => program.title);
+
+if (UNMAPPED_PROGRAM_TITLES.length)
+  throw new Error(
+    `Unmapped clinic programs: ${UNMAPPED_PROGRAM_TITLES.join(", ")}`,
+  );
 
 export const BOOKING_PROGRAMS = FEATURED_PROGRAMS.filter((program) =>
   PROGRAM_KEYS.has(program.title),

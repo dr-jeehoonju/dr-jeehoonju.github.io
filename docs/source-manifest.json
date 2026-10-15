@@ -41,5 +41,11 @@
     "/treatments/neck-wrinkle-filler",
     "/treatments/pdrn-salmon-injection",
     "/treatments/skin-care"
-  ]
+  ],
+  "programCatalog": {
+    "source": "src/lib/vnext-public-catalog.ts",
+    "commit": "9607da15a5dcc6e565ec4f59794d6f178e99f53c",
+    "programs": 6,
+    "sha256": "316979b466a25fe96f3e7a024ebf121e2fafa8ed440521bd19daf5eb98bd36d7"
+  }
 }

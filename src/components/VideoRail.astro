@@ -182,7 +182,7 @@ const ids = [
       drag = false,
       moved = false;
     rail.addEventListener("pointerdown", (e) => {
-      if (e.pointerType !== "mouse") return;
+      if (e.pointerType !== "mouse" || e.button !== 0) return;
       start = e.clientX;
       scroll = rail.scrollLeft;
       drag = true;
@@ -204,6 +204,7 @@ const ids = [
       (e) => {
         if (moved) {
           e.preventDefault();
+          e.stopPropagation();
           moved = false;
         }
       },
