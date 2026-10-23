@@ -1,41 +1,126 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-const notes = await getCollection("notes");
+import { formatNoteDate, sortNotes } from "../../lib/notes";
+import "../../styles/notes.css";
+const notes = (await getCollection("notes", ({ data }) => !data.draft)).sort(
+  sortNotes,
+);
+const categories = [...new Set(notes.map(({ data }) => data.category))];
 ---
 
 <Layout
   title="Notes and perspectives"
   description="Notes on medicine, communication and building from Dr. Jee Hoon Ju."
+  bodyClass="notes-page"
 >
-  <div class="wrap page-intro">
-    <p class="eyebrow">Notes & perspectives</p>
-    <h1>
-      Thinking,
-      <br />
-      <em>in public.</em>
-    </h1>
-    <p class="lead">
-      Questions from the consultation room and the work of building.
-    </p>
-  </div>
-  <section class="wrap section">
-    <div class="grid-3">
-      {notes.map((n) => (
-        <a class="index-card" href={`/notes/${n.id}/`}>
-          <span class="eyebrow">{n.data.category}</span>
-          <h3>{n.data.title}</h3>
-          <p>{n.data.description}</p>
-        </a>
-      ))}
-      <a class="index-card" href="/errata/">
-        <span class="eyebrow">The original public record</span>
-        <h3>Founder’s Errata ↗</h3>
-        <p>
-          What I have changed my mind about, and why. Existing entries remain at
-          their original addresses.
-        </p>
-      </a>
+  <header class="wrap notes-intro">
+    <div>
+      <p class="eyebrow">Notes & perspectives</p>
+      <h1>
+        Thinking,
+        <br />
+        <em>in public.</em>
+      </h1>
     </div>
+    <p class="lead">
+      Questions from the consultation room
+      <br />
+      and the work of building.
+    </p>
+  </header>
+  <section class="wrap archive" aria-label="Notes archive">
+    <div class="archive-tools">
+      <div class="filters" role="group" aria-label="Filter by category" hidden>
+        <button type="button" aria-pressed="true" data-all-notes>
+          All notes
+        </button>
+        {categories.map((category) => (
+          <button type="button" aria-pressed="false" data-filter={category}>
+            {category}
+          </button>
+        ))}
+      </div>
+      <p class="archive-count" role="status" aria-live="polite">
+        {notes.length} {notes.length === 1 ? "note" : "notes"}
+      </p>
+    </div>
+    {notes.map(({ id, data }) => (
+      <article
+        class="note-row"
+        lang={data.lang ?? "en"}
+        data-category={data.category}
+      >
+        <div class="row-side">
+          <span class="category">{data.category}</span>
+          {data.date ? (
+            <time datetime={data.date}>
+              {formatNoteDate(data.date, data.lang)}
+            </time>
+          ) : (
+            <span class="undated">
+              {data.lang === "ko" ? "날짜 미상" : "Undated"}
+            </span>
+          )}
+          <span>{data.lang === "ko" ? "한국어" : "English"}</span>
+        </div>
+        <div>
+          <h2>
+            <a href={`/notes/${id}/`}>{data.title}</a>
+          </h2>
+          <p>{data.description}</p>
+          {data.tags?.length ? (
+            <ul class="tags" aria-label="Tags">
+              {data.tags.map((tag) => (
+                <li>{tag}</li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      </article>
+    ))}
+    <p class="archive-empty" hidden={notes.length > 0}>
+      No notes in this category yet.
+    </p>
+    <aside class="archive-aside">
+      <a class="text-link" href="/errata/">
+        Founder’s Errata ↗
+      </a>
+      <p>
+        What I have changed my mind about, and why.
+        <br />
+        The original public record remains at its original addresses.
+      </p>
+    </aside>
   </section>
+  <script>
+    const filters = document.querySelector<HTMLElement>(".archive .filters");
+    const buttons = [
+      ...document.querySelectorAll<HTMLButtonElement>(
+        ".archive .filters button",
+      ),
+    ];
+    const rows = [...document.querySelectorAll<HTMLElement>(".note-row")];
+    const status = document.querySelector<HTMLElement>(".archive-count");
+    const empty = document.querySelector<HTMLElement>(".archive-empty");
+
+    buttons.forEach((button) =>
+      button.addEventListener("click", () => {
+        buttons.forEach((item) =>
+          item.setAttribute("aria-pressed", String(item === button)),
+        );
+        let count = 0;
+        rows.forEach((row) => {
+          row.hidden =
+            button.hasAttribute("data-filter") &&
+            row.dataset.category !== button.dataset.filter;
+          if (!row.hidden) count++;
+        });
+        if (status)
+          status.textContent = `${count} ${count === 1 ? "note" : "notes"}`;
+        if (empty) empty.hidden = count > 0;
+      }),
+    );
+    if (filters) filters.hidden = false;
+  </script>
 </Layout>

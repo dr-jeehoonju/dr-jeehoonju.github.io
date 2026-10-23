@@ -2,15 +2,28 @@
 import "../styles/global.css";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/source-serif-4";
+import "@fontsource-variable/source-serif-4/wght-italic.css";
 interface Props {
   title: string;
   description: string;
   light?: boolean;
   noindex?: boolean;
+  lang?: "en" | "ko";
+  canonical?: string;
+  bodyClass?: string;
 }
-const { title, description, light = false, noindex = false } = Astro.props;
+const {
+  title,
+  description,
+  light = false,
+  noindex = false,
+  lang = "en",
+  canonical: canonicalOverride,
+  bodyClass,
+} = Astro.props;
 const path = Astro.url.pathname;
-const canonical = new URL(path, "https://jeehoonju.com").href;
+const canonical =
+  canonicalOverride ?? new URL(path, "https://jeehoonju.com").href;
 const nav = [
   ["Dr. Ju", "/about/"],
   ["Care", "/care/"],
@@ -41,7 +54,7 @@ const schema = {
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta
       name="google-site-verification"
@@ -68,11 +81,11 @@ const schema = {
       set:html={JSON.stringify(schema).replace(/</g, "\\u003c")}
     />
   </head>
-  <body class:list={[light && "light-page"]}>
-    <a class="skip" href="#main">
+  <body class:list={[light && "light-page", bodyClass]}>
+    <a class="skip" href="#main" lang="en">
       Skip to content
     </a>
-    <header class="site-header">
+    <header class="site-header" lang="en">
       <a class="wordmark" href="/" aria-label="Dr. Jee Hoon Ju home">
         <span class="brand-star">✧</span> Jee Hoon Ju
         <span class="degree">MD</span>
@@ -103,6 +116,7 @@ const schema = {
       id="mobile-nav"
       class="mobile-nav"
       aria-label="Mobile navigation"
+      lang="en"
       hidden
     >
       {nav.map(([label, url]) => (
@@ -113,7 +127,7 @@ const schema = {
     <main id="main">
       <slot />
     </main>
-    <footer class="footer wrap">
+    <footer class="footer wrap" lang="en">
       <div class="footer-top">
         <a class="wordmark" href="/">
           Jee Hoon Ju<span class="degree">MD</span>
@@ -143,7 +157,7 @@ const schema = {
         with your physician; individual suitability requires an assessment.
       </p>
     </footer>
-    <div class="cookie-banner" hidden>
+    <div class="cookie-banner" lang="en" hidden>
       <p>
         Optional analytics help us understand which pages are useful. Booking
         details are never sent to analytics.
@@ -163,6 +177,10 @@ const schema = {
       toggle?.addEventListener("click", () => {
         const open = toggle.getAttribute("aria-expanded") !== "true";
         toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute(
+          "aria-label",
+          open ? "Close navigation" : "Open navigation",
+        );
         if (menu) menu.hidden = !open;
       });
     </script>
