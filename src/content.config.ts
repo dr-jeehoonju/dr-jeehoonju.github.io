@@ -7,6 +7,11 @@ const notes = defineCollection({
     title: z.string(),
     description: z.string(),
     category: z.string(),
+    date: z.coerce.date().optional(),
+    tags: z.array(z.string()).optional(),
+    lang: z.enum(["en", "ko"]).optional(),
+    canonical: z.string().url().optional(),
+    draft: z.boolean().optional(),
   }),
 });
 export const collections = { notes };
