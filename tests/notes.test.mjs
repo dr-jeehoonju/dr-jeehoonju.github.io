@@ -185,13 +185,19 @@ draft: true`,
       const slugs = [
         ...archive.matchAll(/<h2>\s*<a href="\/notes\/([^/]+)\/"/g),
       ].map(([, slug]) => slug);
-      assert.deepEqual(slugs, [
+      // Real notes are added over time; assert the relative order of the
+      // known set instead of the full archive list.
+      const expectedOrder = [
         "fixture-ko",
         "fixture-tie",
         "fixture-older",
         "before-choosing-a-treatment",
         "evidence-and-experience",
-      ]);
+      ];
+      assert.deepEqual(
+        slugs.filter((slug) => expectedOrder.includes(slug)),
+        expectedOrder,
+      );
       assert.match(archive, /data-filter="Fixture · Building"/);
       assert.match(archive, /class="filters"[^>]*hidden/);
       assert.doesNotMatch(archive, /Hidden draft fixture|Draft-only category/);
