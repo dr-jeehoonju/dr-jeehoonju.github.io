@@ -309,8 +309,17 @@
   margin: 0 0 8px;
 }
 .author-block p {
-  margin: 0;
+  margin: 0 0 12px;
   color: var(--muted);
+}
+.author-block p:last-child {
+  margin-bottom: 0;
+}
+.author-block .author-titles {
+  color: var(--ink, inherit);
+}
+.author-block .author-contact a {
+  white-space: nowrap;
 }
 .author-block a {
   text-decoration: underline;

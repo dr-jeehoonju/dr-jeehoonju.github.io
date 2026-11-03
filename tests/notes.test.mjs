@@ -158,8 +158,15 @@ draft: true`,
       assert.match(korean, /<pre[^>]*tabindex="0"[^>]*aria-label="YAML 코드"/);
       assert.match(
         korean,
-        /The author practises at a clinic in Seoul and founded DockieTalkie\./,
+        /International Director, Tune Clinic Seoul · CEO, AetherHeal/,
       );
+      assert.match(korean, /I write these notes so you can\s+make an informed choice/);
+      assert.match(korean, /href="https:\/\/wa\.me\/821098748575"/);
+      assert.match(korean, /href="https:\/\/line\.me\/ti\/p\/S_ewS8UAKv"/);
+      assert.match(korean, /href="https:\/\/t\.me\/drjeeju"/);
+      assert.match(korean, /href="mailto:drjeeju@aetherheal\.com"/);
+      assert.match(korean, /14 Nonhyeon-ro 176-gil/);
+      assert.match(korean, /Sun closed\s+\(KST\)/);
       assert.match(
         korean,
         /class="republished"[^]*href="https:\/\/example\.com\/published-fixture">Published fixture<\/a>/,
