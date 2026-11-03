@@ -321,6 +321,16 @@
 .author-block .author-contact a {
   white-space: nowrap;
 }
+.author-block .author-clinic-photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  margin: 4px 0 12px;
+  border-radius: 2px;
+}
 .author-block a {
   text-decoration: underline;
   text-underline-offset: 3px;

@@ -166,6 +166,7 @@ draft: true`,
       assert.match(korean, /href="https:\/\/t\.me\/drjeeju"/);
       assert.match(korean, /href="mailto:drjeeju@aetherheal\.com"/);
       assert.match(korean, /14 Nonhyeon-ro 176-gil/);
+      assert.match(korean, /src="\/images\/tune-clinic-lobby\.webp"/);
       assert.match(korean, /Sun closed\s+\(KST\)/);
       assert.match(
         korean,
