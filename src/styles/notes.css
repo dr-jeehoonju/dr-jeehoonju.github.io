@@ -321,6 +321,20 @@
 .author-block .author-contact a {
   white-space: nowrap;
 }
+.prose .clinic-figure {
+  margin: 40px 0 0;
+}
+.prose .clinic-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+.prose .clinic-figure figcaption {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  color: var(--muted, #666);
+}
 .author-block .author-clinic-photo {
   display: block;
   width: 100%;
