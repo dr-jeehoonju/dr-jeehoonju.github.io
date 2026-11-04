@@ -127,15 +127,22 @@ const schema = {
       </div>
     </aside>
   </article>
-    {/* Outside <article> on purpose: Medium's story import copies the article,
-        and it refuses messenger short links (wa.me, t.me, line.me) and mailto. */}
+    {/* Medium's story import copies this page, contact row included, and
+        refuses messenger short links (wa.me, t.me, line.me) and mailto. The
+        importer does not run scripts, so these links get their href in the
+        browser; an imported copy keeps the words without the links. */}
     <nav class="author-contact-row" lang="en" aria-label="Contact Dr. Ju">
-      <a href="https://wa.me/821098748575" rel="noopener">WhatsApp</a> ·{" "}
-      <a href="https://line.me/ti/p/S_ewS8UAKv" rel="noopener">LINE</a> ·{" "}
-      <a href="https://t.me/drjeeju" rel="noopener">Telegram</a> ·{" "}
-      <a href="mailto:drjeeju@aetherheal.com">drjeeju@aetherheal.com</a> ·{" "}
+      <a data-contact-href="https://wa.me/821098748575" rel="noopener">WhatsApp</a> ·{" "}
+      <a data-contact-href="https://line.me/ti/p/S_ewS8UAKv" rel="noopener">LINE</a> ·{" "}
+      <a data-contact-href="https://t.me/drjeeju" rel="noopener">Telegram</a> ·{" "}
+      <a data-contact-href="mailto:drjeeju@aetherheal.com">drjeeju@aetherheal.com</a> ·{" "}
       <a href="/about/">About Dr. Ju ↗</a>
     </nav>
+    <script is:inline>
+      document
+        .querySelectorAll(".author-contact-row a[data-contact-href]")
+        .forEach((a) => a.setAttribute("href", a.dataset.contactHref));
+    </script>
     {republished?.length ? (
       <p class="republished">
         {lang === "ko" ? "다른 곳에서 읽기: " : "Republished on: "}
