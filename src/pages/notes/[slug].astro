@@ -49,7 +49,8 @@ const schema = {
     type="application/ld+json"
     set:html={JSON.stringify(schema).replace(/</g, "\\u003c")}
   />
-  <article class="reading-shell" lang={lang} aria-labelledby="article-title">
+  <div class="reading-shell" lang={lang}>
+  <article lang={lang} aria-labelledby="article-title">
     <header class="article-header">
       <p class="breadcrumb">
         <a href="/notes/">← {lang === "ko" ? "전체 글" : "All notes"}</a>
@@ -116,13 +117,6 @@ const schema = {
           every line here. If a question stays with you after reading, send it
           to me on WhatsApp, LINE or Telegram and I will answer it myself.
         </p>
-        <p class="author-contact">
-          <a href="https://wa.me/821098748575" rel="noopener">WhatsApp</a> ·{" "}
-          <a href="https://line.me/ti/p/S_ewS8UAKv" rel="noopener">LINE</a> ·{" "}
-          <a href="https://t.me/drjeeju" rel="noopener">Telegram</a> ·{" "}
-          <a href="mailto:drjeeju@aetherheal.com">drjeeju@aetherheal.com</a> ·{" "}
-          <a href="/about/">About Dr. Ju ↗</a>
-        </p>
         <p class="author-clinic">
           Tune Clinic Seoul<br />
           4F, Apgujeong Securities Building, 14 Nonhyeon-ro 176-gil,
@@ -132,6 +126,16 @@ const schema = {
         </p>
       </div>
     </aside>
+  </article>
+    {/* Outside <article> on purpose: Medium's story import copies the article,
+        and it refuses messenger short links (wa.me, t.me, line.me) and mailto. */}
+    <nav class="author-contact-row" lang="en" aria-label="Contact Dr. Ju">
+      <a href="https://wa.me/821098748575" rel="noopener">WhatsApp</a> ·{" "}
+      <a href="https://line.me/ti/p/S_ewS8UAKv" rel="noopener">LINE</a> ·{" "}
+      <a href="https://t.me/drjeeju" rel="noopener">Telegram</a> ·{" "}
+      <a href="mailto:drjeeju@aetherheal.com">drjeeju@aetherheal.com</a> ·{" "}
+      <a href="/about/">About Dr. Ju ↗</a>
+    </nav>
     {republished?.length ? (
       <p class="republished">
         {lang === "ko" ? "다른 곳에서 읽기: " : "Republished on: "}
@@ -146,5 +150,5 @@ const schema = {
     <a class="back-link" href="/notes/">
       ← {lang === "ko" ? "전체 글로 돌아가기" : "Back to all notes"}
     </a>
-  </article>
+  </div>
 </Layout>

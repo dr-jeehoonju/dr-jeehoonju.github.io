@@ -162,6 +162,9 @@ draft: true`,
       );
       assert.match(korean, /I write these notes so you can\s+make an informed choice/);
       assert.match(korean, /href="https:\/\/wa\.me\/821098748575"/);
+      // Messenger and mail links sit outside <article>: Medium imports the article and refuses them.
+      assert.doesNotMatch(korean.slice(korean.indexOf("<article"), korean.indexOf("</article>")), /wa\.me|t\.me\/|line\.me|mailto:/);
+      assert.match(korean, /<\/article>[^]*class="author-contact-row"[^]*href="https:\/\/t\.me\/drjeeju"/);
       assert.match(korean, /href="https:\/\/line\.me\/ti\/p\/S_ewS8UAKv"/);
       assert.match(korean, /href="https:\/\/t\.me\/drjeeju"/);
       assert.match(korean, /href="mailto:drjeeju@aetherheal\.com"/);

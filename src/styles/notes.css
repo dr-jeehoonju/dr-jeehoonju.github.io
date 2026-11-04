@@ -318,8 +318,18 @@
 .author-block .author-titles {
   color: var(--ink, inherit);
 }
-.author-block .author-contact a {
+.author-contact-row {
+  font: 400 0.875rem/1.8 var(--notes-sans);
+  color: var(--muted);
+  padding: 12px 0 0 84px;
+}
+.author-contact-row a {
   white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .author-contact-row {
+    padding-left: 0;
+  }
 }
 .prose .clinic-figure {
   margin: 40px 0 0;
