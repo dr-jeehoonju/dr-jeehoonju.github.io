@@ -34,7 +34,7 @@ const concerns = [
 
 <Layout
   title="Medicine, with perspective"
-  description="Meet Dr. Jee Hoon Ju, an English-speaking aesthetic medicine physician at Tune Clinic in Seoul and founder of AetherHeal. Explore care and plan your visit."
+  description="Dr. Jee Hoon Ju, AI-augmented Aesthetic Medicine Specialist and CEO of AetherHeal. At Tune Clinic on Wednesdays & Fridays only."
 >
   <section class="hero">
     <Constellation />
@@ -51,7 +51,9 @@ const concerns = [
         <p class="hero-description">
           I’m Dr. Jee Hoon Ju.
           <br />
-          Aesthetic medicine grounded in thoughtful assessment.
+          AI-augmented Aesthetic Medicine Specialist.
+          <br />
+          CEO of AetherHeal.
           <br class="desktop" /> Technology built around the people it serves.
         </p>
         <div class="actions">
@@ -62,7 +64,10 @@ const concerns = [
             Meet Dr. Ju <span>→</span>
           </a>
         </div>
-        <p class="hero-location">English-speaking care · Apgujeong, Seoul</p>
+        <p class="hero-location">
+          English-speaking care · Apgujeong, Seoul<br />
+          At Tune Clinic on Wednesdays &amp; Fridays only.
+        </p>
       </div>
       <div class="hero-portrait">
         <img
@@ -74,7 +79,7 @@ const concerns = [
         />
         <div class="portrait-caption">
           <span>Jee Hoon Ju, MD</span>
-          <span>Aesthetic medicine</span>
+          <span>AI-augmented Aesthetic Medicine Specialist</span>
         </div>
       </div>
     </div>
@@ -309,6 +314,8 @@ const concerns = [
   }
   .portrait-caption {
     display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
     justify-content: space-between;
     padding: 16px 0;
     font-size: 0.64rem;

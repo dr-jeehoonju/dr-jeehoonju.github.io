@@ -158,7 +158,7 @@ draft: true`,
       assert.match(korean, /<pre[^>]*tabindex="0"[^>]*aria-label="YAML 코드"/);
       assert.match(
         korean,
-        /International Director, Tune Clinic Seoul · CEO, AetherHeal/,
+        /AI-augmented Aesthetic Medicine Specialist[\s\S]*CEO of AetherHeal[\s\S]*International Director, Tune Clinic Seoul/,
       );
       assert.match(korean, /I write these notes so you can\s+make an informed choice/);
       assert.match(korean, /data-contact-href="https:\/\/wa\.me\/821098748575"/);
